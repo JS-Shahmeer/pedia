@@ -35,16 +35,54 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-5">Useful Links</h3>
             <ul className="space-y-3">
-              <li className="hover:text-[#b67878] cursor-pointer">404 Page</li>
-              <li className="hover:text-[#b67878] cursor-pointer">
-                Page Without Sidebar
+              <li>
+                <a
+                  href="/wikipedia-writing-services"
+                  className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
+                >
+                  Wikipedia Writing Services
+                </a>
               </li>
-              <li className="hover:text-[#b67878] cursor-pointer">
-                Page Left Sidebar
+              <li>
+                <a
+                  href="/wikipedia-editing-services"
+                  className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
+                >
+                  Wikipedia Editing Services
+                </a>
               </li>
-              <li className="hover:text-[#b67878] cursor-pointer">
-                Page Right Sidebar
+              <li>
+                <a
+                  href="/wikipedia-publishing-services"
+                  className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
+                >
+                  Wikipedia Publishing Services
+                </a>
               </li>
+              <li>
+                <a
+                  href="/wikipedia-consultant"
+                  className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
+                >
+                  Wikipedia Consultant
+                </a>
+              </li>
+              {/* <li>
+                <a
+                  href="/about-us"
+                  className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
+                >
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
+                >
+                  Contact Us
+                </a>
+              </li> */}
             </ul>
           </div>
 

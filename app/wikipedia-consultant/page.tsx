@@ -12,7 +12,7 @@ import Contact from "@/src/components/Contact";
 import Footer from "@/src/components/Footer";
 import FAQSection from "@/src/components/FAQSection";
 
-export default function WikipediaWritingServicesPage() {
+export default function WikipediaConsultantPage() {
   return (
     <main className="relative overflow-x-clip">
       <Navbar />

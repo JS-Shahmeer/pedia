@@ -10,19 +10,21 @@ import Portfolio from "../src/components/Portfolio";
 import Pricing from "../src/components/Pricing";
 import Contact from "../src/components/Contact";
 import Footer from "../src/components/Footer";
+import FAQSection from "../src/components/FAQSection";
 
 export default function Home() {
   return (
     <main className="relative">
       <Navbar />
       <Hero />
+      <About />
       <HomeServices />
       <Chapters />
       <SubscribeCTA />
       <Portfolio />
       <Pricing />
-      <About />
       <Testimonials />
+      <FAQSection />
       <CTA />
       <Contact />
       <Footer />
