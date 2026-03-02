@@ -1,6 +1,11 @@
-import Head from "next/head";
 import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
+
+export const metadata = {
+  title: "Write on Pedia – Home",
+  description: "Professional Wikipedia writing, editing, publishing and consultancy services to help you get listed on Wikipedia.",
+  alternates: { canonical: "https://yourdomain.com/" },
+};
 import About from "../src/components/About";
 import Testimonials from "../src/components/Testimonials";
 import CTA from "../src/components/CTA";
@@ -16,11 +21,7 @@ import FAQSection from "../src/components/FAQSection";
 export default function Home() {
   return (
     <main className="relative">
-      <Head>
-        <title>Write on Pedia – Home</title>
-        <meta name="description" content="Professional Wikipedia writing, editing, publishing and consultancy services to help you get listed on Wikipedia." />
-        <link rel="canonical" href="https://yourdomain.com/" />
-      </Head>
+
       <Navbar />
       <Hero />
       <About />

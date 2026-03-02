@@ -1,6 +1,11 @@
 import React from "react";
-import Head from "next/head";
 import Hero from "./components/Hero";
+
+export const metadata = {
+  title: "Wikipedia Publishing Services – Write on Pedia",
+  description: "Reliable Wikipedia publishing services to ensure your article gets live.",
+  alternates: { canonical: "https://yourdomain.com/wikipedia-publishing-services" },
+};
 import SectionOne from "./components/SectionOne";
 import SectionTwo from "./components/SectionTwo";
 import SectionCTA from "./components/SectionCTA";
@@ -16,11 +21,6 @@ import FAQSection from "@/src/components/FAQSection";
 export default function WikipediaPublishingServicesPage() {
   return (
     <main className="relative overflow-x-clip">
-      <Head>
-        <title>Wikipedia Publishing Services – Write on Pedia</title>
-        <meta name="description" content="Reliable Wikipedia publishing services to ensure your article gets live." />
-        <link rel="canonical" href="https://yourdomain.com/wikipedia-publishing-services" />
-      </Head>
       <Navbar />
       <Hero />
       <SectionOne />

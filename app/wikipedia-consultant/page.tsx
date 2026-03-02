@@ -1,6 +1,11 @@
 import React from "react";
-import Head from "next/head";
 import Hero from "./components/Hero";
+
+export const metadata = {
+  title: "Wikipedia Consultant – Write on Pedia",
+  description: "Professional Wikipedia consultancy services to guide you through the process.",
+  alternates: { canonical: "https://yourdomain.com/wikipedia-consultant" },
+};
 import SectionOne from "./components/SectionOne";
 import SectionTwo from "./components/SectionTwo";
 import SectionCTA from "./components/SectionCTA";
@@ -16,11 +21,6 @@ import FAQSection from "@/src/components/FAQSection";
 export default function WikipediaConsultantPage() {
   return (
     <main className="relative overflow-x-clip">
-      <Head>
-        <title>Wikipedia Consultant – Write on Pedia</title>
-        <meta name="description" content="Professional Wikipedia consultancy services to guide you through the process." />
-        <link rel="canonical" href="https://yourdomain.com/wikipedia-consultant" />
-      </Head>
       <Navbar />
       <Hero />
       <SectionOne />
