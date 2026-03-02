@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Hero from "./components/Hero";
 import SectionOne from "./components/SectionOne";
 import SectionTwo from "./components/SectionTwo";
@@ -15,6 +16,11 @@ import FAQSection from "@/src/components/FAQSection";
 export default function WikipediaWritingServicesPage() {
   return (
     <main className="relative overflow-x-clip">
+      <Head>
+        <title>Wikipedia Writing Services – Write on Pedia</title>
+        <meta name="description" content="Professional Wikipedia writing services tailored to your needs." />
+        <link rel="canonical" href="https://yourdomain.com/wikipedia-writing-services" />
+      </Head>
       <Navbar />
       <Hero />
       <SectionOne />

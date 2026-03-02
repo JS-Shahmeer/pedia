@@ -20,7 +20,7 @@ const Footer = () => {
             <a href="/" className="logo flex items-center shrink-0">
               <img
                 src="https://fixolab.github.io/wonted/one-page-version/assets/images/wonted-logo.png"
-                alt="Get on Pedia"
+                alt="Write on Pedia"
                 className="h-10 w-auto object-contain"
               />
             </a>
