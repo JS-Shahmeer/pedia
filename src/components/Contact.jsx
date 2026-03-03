@@ -87,21 +87,30 @@ const Contact = () => {
           {/* RIGHT — INFO BOX */}
           <div className="bg-[#f6ede6] p-6 md:p-8">
             <div className="space-y-6 text-gray-800">
-              <div>
+              <a
+                className="block group"
+                href="https://maps.app.goo.gl/g8PqVjZuMWopCP376"
+                target="_blank"
+              >
                 <h4 className="font-bold tracking-wide mb-2">ADDRESS:</h4>
-                <p>16, Lankaway</p>
-                <p>Florida, USA 99544</p>
-              </div>
+                <p className="text-[#b67878] group-hover:text-gray-800">
+                  3800 N Lamar Blvd Suite 200, Austin, TX 78756
+                </p>
+              </a>
 
-              <div>
+              <a className="block group" href="tel:+15127680328">
                 <h4 className="font-bold tracking-wide mb-2">PHONE:</h4>
-                <p className="text-[#b67878]">112 444 7900</p>
-              </div>
+                <p className="text-[#b67878] group-hover:text-gray-800">
+                  (512) 768-0328
+                </p>
+              </a>
 
-              <div>
+              <a className="block group" href="mailto:info@writeonpedia.com">
                 <h4 className="font-bold tracking-wide mb-2">EMAIL :</h4>
-                <p className="text-[#b67878]">support@support.com</p>
-              </div>
+                <p className="text-[#b67878] group-hover:text-gray-800">
+                  info@writeonpedia.com
+                </p>
+              </a>
 
               <div>
                 <h4 className="text-2xl font-semibold mb-4">

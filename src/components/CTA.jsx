@@ -14,7 +14,7 @@ const CTA = ({ bgColor = "bg-[#fdf6f2]" }) => {
             Feel free to contact me.
           </h2>
           <h2 className="text-xl md:text-4xl font-bold text-[#b77b7b] mb-6 text-center">
-            <a href="tel:+00000000000">+00 (0) 000 000 000</a>
+            <a href="tel:+15127680328">(512) 768-0328</a>
           </h2>
           <div className="flex justify-center">
             <QuoteButton variant="default">Send us a message</QuoteButton>

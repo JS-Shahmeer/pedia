@@ -32,11 +32,11 @@ export default function SectionCTA() {
 
           {/* Phone Number */}
           <a
-            href="tel:+18722011166"
+            href="tel:+15127680328"
             className="w-full sm:w-auto bg-white hover:bg-gray-100 text-[#8b6b5a] font-semibold py-3 md:py-3.5 px-6 md:px-8 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
             <Phone size={18} />
-            <span>+1 872 201 1166</span>
+            <span>(512) 768-0328</span>
           </a>
         </div>
       </div>

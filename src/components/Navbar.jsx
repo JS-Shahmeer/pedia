@@ -67,6 +67,7 @@ export default function Navbar() {
                       aria-haspopup="true"
                       aria-expanded={!!openSubmenus.services}
                       onClick={() => toggleSubmenu('services')}
+                      onMouseEnter={() => setOpenSubmenus((prev)=>({...prev, services:true}))}
                       onKeyDown={(e) => { if (e.key === 'Escape') setOpenSubmenus({}); }}
                     >
                       {item.label}
@@ -77,7 +78,8 @@ export default function Navbar() {
                     <div
                       className={`absolute left-1/2 transform -translate-x-1/2 mt-3 bg-white border rounded shadow-lg w-64 z-20 ${
                         openSubmenus.services ? "block" : "hidden"
-                      }`}
+                      } group-hover:block`}
+                      onMouseLeave={() => setOpenSubmenus((prev) => ({ ...prev, services: false }))}
                     >
                       {item.submenu.map((sub) => (
                         <a
@@ -108,10 +110,10 @@ export default function Navbar() {
           
           <QuoteButton variant="default">Get Started</QuoteButton>
           <a
-            href="tel:0000000000"
+            href="tel:+15127680328"
             className="text-sm text-gray-700 hover:text-[#8b6b5a] focus:outline-none focus:ring-2 focus:ring-[#8b6b5a]"
           >
-            0000000000
+            (512) 768-0328
           </a>
         </div>
 

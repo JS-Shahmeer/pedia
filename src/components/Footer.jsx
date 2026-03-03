@@ -88,18 +88,18 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-5">Contact Us</h3>
             <div className="space-y-4 text-gray-700">
-              <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="mt-1 text-[#b67878]" />
-                <p>San Francisco CA 94107,US</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaEnvelope className="text-[#b67878]" />
-                <p>wonted@gmail.com</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaPhoneAlt className="text-[#b67878]" />
-                <p>+123 345123 556</p>
-              </div>
+              <a href="https://maps.app.goo.gl/g8PqVjZuMWopCP376" target="_blank" className="flex items-start gap-3 group">
+                <FaMapMarkerAlt className="mt-1 text-[#b67878] group-hover:text-gray-800" />
+                <p className="group-hover:underline">3800 N Lamar Blvd Suite 200, Austin, TX 78756</p>
+              </a>
+              <a href="mailto:info@writeonpedia.com" className="flex items-center gap-3 group">
+                <FaEnvelope className="text-[#b67878] group-hover:text-gray-800" />
+                <p className="group-hover:underline">info@writeonpedia.com</p>
+              </a>
+              <a href="tel:+15127680328" className="flex items-center gap-3 group">
+                <FaPhoneAlt className="text-[#b67878] group-hover:text-gray-800" />
+                <p className="group-hover:underline">(512) 768-0328</p>
+              </a>
             </div>
 
             {/* Social Icons */}
