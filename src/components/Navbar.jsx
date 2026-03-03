@@ -1,6 +1,7 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
+import QuoteButton from "@/src/components/QuoteButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -42,13 +43,13 @@ export default function Navbar() {
         scrolled ? "fixed top-0 bg-white navbar_fixed" : "absolute top-4"
       }`}
     >
-      <div className="w-[85vw] mx-auto px-5 bg-white grid grid-cols-2 md:grid-cols-3 items-center md:py-6 py-3">
+      <div className="w-[85vw] mx-auto px-5 bg-white grid grid-cols-2 md:grid-cols-3 items-center md:py-4 py-3">
         
         {/* Logo */}
         <a href="/" className="logo flex items-center shrink-0">
           <img
             src="https://fixolab.github.io/wonted/one-page-version/assets/images/wonted-logo.png"
-            alt="Logo"
+            alt="Write on Pedia"
             className="h-10 w-auto object-contain"
           />
         </a>
@@ -104,12 +105,8 @@ export default function Navbar() {
 
         {/* Desktop Right Side */}
         <div className="hidden md:flex items-center space-x-4 justify-end">
-          <a
-            href=""
-            className="bg-[#8b6b5a] text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#8b6b5a]"
-          >
-            Get Started
-          </a>
+          
+          <QuoteButton variant="default">Get Started</QuoteButton>
           <a
             href="tel:0000000000"
             className="text-sm text-gray-700 hover:text-[#8b6b5a] focus:outline-none focus:ring-2 focus:ring-[#8b6b5a]"

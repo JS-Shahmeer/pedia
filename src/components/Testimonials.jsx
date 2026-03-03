@@ -9,28 +9,29 @@ import "swiper/css/pagination";
 const testimonials = [
   {
     name: "Brightlight books",
-    role: "Ubold Customer",
+    role: "CEO, Technology Company",
     image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquid quo eligendi voluptates veritatis odit suscipit similique iure architecto autem.",
+    text: "They strengthened our sourcing and handled the deletion discussion professionally.",
   },
   {
-    name: "Brightlight books",
-    role: "Ubold Customer",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquid quo eligendi voluptates veritatis odit suscipit similique iure architecto autem.",
+    name: "Sarah Mitchell",
+    role: "Founder, Publishing House",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
+    text: "Outstanding service! Their expertise helped us establish our Wikipedia presence seamlessly.",
   },
   {
-    name: "Brightlight books",
-    role: "Ubold Customer",
-    image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=200",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquid quo eligendi voluptates veritatis odit suscipit similique iure architecto autem.",
+    name: "David Chen",
+    role: "Marketing Director",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
+    text: "Fantastic support throughout the entire process. Highly recommend to anyone seeking guidance.",
   },
   {
-    name: "Brightlight books",
-    role: "Ubold Customer",
-    image: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=200",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquid quo eligendi voluptates veritatis odit suscipit similique iure architecto autem.",
+    name: "Michael Thompson",
+    role: "Content Strategist",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+    text: "The team's professionalism and attention to detail made all the difference.",
   },
+
 ];
 
 const Testimonials = () => {
@@ -60,7 +61,7 @@ const Testimonials = () => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="pb-14"
+          className="pb-18"
         >
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>

@@ -1,5 +1,7 @@
 "use client";
 
+import { Check } from "lucide-react";
+
 export default function MissionAndExpertise() {
   return (
     <section className="py-16 md:py-24 bg-white">
@@ -11,12 +13,26 @@ export default function MissionAndExpertise() {
               Our Mission
             </h2>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-              We work with the celebrities public figures, artists, musicians,
-              authors, startups, onyffizmatoto musiheices, and borrowege that
-              idustretes, our thisps, even polics, and parties confest buseilift
-              tasineess is theirs and pages with Wikipedia's guidelines and petter
-              sweiclets also to report
+              Our mission is to provide reliable, ethical, and high-quality
+              Wikipedia solutions that help our clients establish authority and
+              digital presence worldwide. We aim to:
             </p>
+            <ul className="space-y-3 mt-6">
+              {[
+                "Create accurate and verified Wikipedia content",
+                "Follow strict Wikipedia standards",
+                "Build long-term online reputation",
+                "Deliver result-driven services",
+                "Maintain client confidentiality",
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="w-4 h-4 flex items-center justify-center rounded-full bg-[#b77b7b] text-white">
+                    <Check size={11} />
+                  </span>
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Right: Our Expertise */}
@@ -25,12 +41,25 @@ export default function MissionAndExpertise() {
               Our Expertise
             </h2>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-              Establishing a good reputation to your sucvresse as one of for
-              sovenft years it mwren thgir corrinri that marketing senbietes
-              seconddary necesitaces, non pstrtunduass canntenine amestom, your
-              Wikipedia pages, and jsortollen sheegy on regent focus focused
-              Wikipedia content and marketing strategies.
+              With years of experience in Wikipedia writing and publishing, we
+              understand how Wikipedia works. Our expertise includes:
             </p>
+            <ul className="space-y-3 mt-6">
+              {[
+                "In-depth research and citation",
+                "Neutral and policy-compliant writing",
+                "Page approval strategies",
+                "Notability assessment",
+                "Content monitoring and maintenance",
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="w-4 h-4 flex items-center justify-center rounded-full bg-[#b77b7b] text-white">
+                    <Check size={11} />
+                  </span>
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

@@ -3,27 +3,27 @@ import React, { useState } from "react";
 
 const chapters = [
   {
-    title: "Portfolio 1",
+    title: "Business Profile Case Study",
     image:
       "https://fixolab.github.io/wonted/one-page-version/assets/images/chapter-preview/6.png",
   },
   {
-    title: "Portfolio 2",
+    title: "Public Figure Biography",
     image:
       "https://fixolab.github.io/wonted/one-page-version/assets/images/chapter-preview/7.png",
   },
   {
-    title: "Portfolio 3",
+    title: "Author Profile Restoration",
     image:
       "https://fixolab.github.io/wonted/one-page-version/assets/images/chapter-preview/8.png",
   },
   {
-    title: "Portfolio 4",
+    title: "Corporate Page Recovery",
     image:
       "https://fixolab.github.io/wonted/one-page-version/assets/images/chapter-preview/9.png",
   },
   {
-    title: "Portfolio 5",
+    title: "Research Scholar Page Creation",
     image:
       "https://fixolab.github.io/wonted/one-page-version/assets/images/chapter-preview/10.png",
   },
@@ -37,7 +37,7 @@ export default function Portfolio() {
       <div className="global-container">
         <div className="text-center mb-16">
           <p className="text-sm text-gray-500 tracking-widest mb-2">
-            PORTFOLIO
+            CASE STUDIES
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Our Work

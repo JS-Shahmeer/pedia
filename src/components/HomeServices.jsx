@@ -5,21 +5,21 @@ import { FaFileAlt, FaDice, FaBullseye } from "react-icons/fa"; // Using react-i
 const cards = [
   {
     icon: <FaFileAlt className="text-white w-6 h-6" />,
-    title: "Experience",
+    title: "Credibility",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex? Voluptas minus quis aspernatur corporis.",
+      "A properly structured and well-sourced Wikipedia presence enhances trust and public perception.",
   },
   {
     icon: <FaDice className="text-white w-6 h-6" />,
-    title: "Motivation",
+    title: "Stability",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex? Voluptas minus quis aspernatur corporis.",
+      "We build pages designed to withstand scrutiny, community review, and policy checks.",
   },
   {
     icon: <FaBullseye className="text-white w-6 h-6" />,
-    title: "Goals",
+    title: "Compliance",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex? Voluptas minus quis aspernatur corporis.",
+      "Every draft follows neutrality, citation standards, and formatting guidelines.",
   },
 ];
 
@@ -32,10 +32,10 @@ const HomeServices = () => {
         {/* Section Title */}
         <div className="">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            What you'll achieve <br /> by this book
+            WHAT YOU’LL ACHIEVE
           </h2>
           <p className="text-gray-600 max-w-xl">
-            Lorem ipsum dolor sit amet, consectetuer laoreet dolore magna.
+            What You’ll Achieve With Our Services.
           </p>
         </div>
 

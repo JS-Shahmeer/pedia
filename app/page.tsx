@@ -21,7 +21,6 @@ import FAQSection from "../src/components/FAQSection";
 export default function Home() {
   return (
     <main className="relative">
-
       <Navbar />
       <Hero />
       <About />

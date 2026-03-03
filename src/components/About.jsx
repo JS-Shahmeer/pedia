@@ -16,7 +16,7 @@ const About = () => {
         <div className="text-center mb-16">
           <p className="text-sm text-gray-500 tracking-widest mb-2">ABOUT US</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            About Our Company
+            About Our Wikipedia Services
           </h2>
           <div className="section-divider divider-traingle relative"></div>
         </div>
@@ -47,24 +47,23 @@ const About = () => {
 
           {/* RIGHT CONTENT */}
           <div>
-            <h3 className="text-3xl font-semibold text-[#0f172a] mb-6">
+            {/* <h3 className="text-3xl font-semibold text-[#0f172a] mb-6">
               Michale John
-            </h3>
+            </h3> */}
 
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              nam eveniet veritatis aliquid harum temporibus et pariatur.
-              Incidunt, labore voluptatum minima tenetur, consequatur odit
-              sapiente blanditiis perferendis corrupti non quisquam?
+            <p className="text-gray-600 leading-relaxed mb-6 text-lg font-medium">
+              Building a Wikipedia page requires more than writing — it requires
+              eligibility, independent sourcing, and strict neutrality. We
+              specialize in:
             </p>
 
             {/* Bullet Points */}
             <ul className="space-y-4 mb-8">
               {[
-                "Achieved 10+ awarded",
-                "Very passionate about writting",
-                "Most Popular writer in the year",
-                "17+ Books written",
+                "Wikipedia page creation",
+                "Page editing & restructuring",
+                "Deletion defense",
+                "Ongoing monitoring & maintenance",
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <span className="w-6 h-6 flex items-center justify-center rounded-full bg-[#b77b7b] text-white">

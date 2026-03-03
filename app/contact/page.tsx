@@ -13,7 +13,6 @@ import ContactBanner from "@/app/contact/ContactBanner";
 export default function ContactPage() {
   return (
     <main className="relative">
-
       <Navbar />
       <ContactBanner />
       <Contact />

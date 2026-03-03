@@ -4,57 +4,38 @@ import React from "react";
 const chapters = [
   {
     id: 1,
-    title: "Getting started",
+    title: "Wikipedia Page Creation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
+      "We research, verify independent sources, draft neutral content, structure citations, and manage submission.",
   },
   {
     id: 2,
-    title: "The language of gossip box",
+    title: "Wikipedia Editing & Improvements",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
+      "We improve weak sourcing, remove biased language, fix formatting issues, and strengthen compliance.",
   },
   {
     id: 3,
-    title: "The rise of trend Design",
+    title: "Deletion Defense",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
+      "If your page is nominated for deletion or rejected, we assess policy gaps and respond strategically.",
   },
   {
     id: 4,
-    title: "The rise of trend Design",
+    title: "Notability Assessment",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
+      "Before drafting anything, we evaluate eligibility based on reliable third-party media coverage.",
   },
   {
     id: 5,
-    title: "The rise of trend Design",
+    title: "Content Dispute Resolution",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
+      "We assist with talk page discussions and policy clarification.",
   },
   {
     id: 6,
-    title: "The rise of trend Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
-  },
-  {
-    id: 7,
-    title: "Literary Jatra",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
-  },
-  {
-    id: 8,
-    title: "Non-technical literature",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
-  },
-  {
-    id: 9,
-    title: "Where is the author?",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti.",
+    title: "Monitoring & Maintenance",
+    description: "After publication, we monitor edits and maintain compliance.",
   },
 ];
 
@@ -63,9 +44,11 @@ const Chapters = () => {
     <section className="bg-[#f5ede6] py-20 px-5 md:px-10">
       <div className="global-container">
         <div className="text-center mb-12">
-          <p className="text-sm text-gray-500 tracking-widest mb-2">CHAPTERS</p>
+          <p className="text-sm text-gray-500 tracking-widest mb-2">
+            OUR CORE SERVICES
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Chapters we've covered
+            Our Core Wikipedia Services
           </h2>
           <div className="section-divider divider-traingle relative"></div>
         </div>
@@ -76,9 +59,9 @@ const Chapters = () => {
               key={chapter.id}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
             >
-              <p className="text-sm text-gray-500 mb-2">
+              {/* <p className="text-sm text-gray-500 mb-2">
                 Chapter {chapter.id.toString().padStart(2, "0")}
-              </p>
+              </p> */}
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {chapter.title}
               </h3>

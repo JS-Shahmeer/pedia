@@ -10,10 +10,10 @@ const SubscribeCTA = () => {
       }}
     >
       <div className="global-container">
-        <div className="bg-[#f9f2ef] p-10 rounded-xl max-w-md w-full shadow-lg">
+        <div className="bg-[#f9f2ef] p-10 rounded-xl max-w-lg w-full shadow-lg">
           <p className="text-sm text-[#8b6b5a] uppercase mb-2">Subscribe Now</p>
           <h2 className="text-3xl font-bold text-[#1f3342] mb-6">
-            Get a free chapter of this book
+            Get a Free Notability Evaluation
           </h2>
           <form className="flex flex-col sm:flex-row gap-4">
             <input
@@ -29,7 +29,7 @@ const SubscribeCTA = () => {
             </button>
           </form>
           <p className="text-xs text-gray-600 mt-3">
-            * eBook includes iBooks, PDF & ePub versions
+            * Enter your email to receive a quick assessment of your eligibility and sourcing strength.
           </p>
         </div>
       </div>

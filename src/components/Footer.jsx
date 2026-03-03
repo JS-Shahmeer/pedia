@@ -25,9 +25,7 @@ const Footer = () => {
               />
             </a>
             <p className="leading-relaxed text-gray-700 mt-3">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-              minima esse quos voluptatem quo consequuntur commodi eius sed.
-              Alias, quisquam?
+              Write on Pedia is your trusted partner for professional Wikipedia services. We specialize in creating, editing, publishing, and consulting on Wikipedia articles to enhance your online presence and credibility.
             </p>
           </div>
 
@@ -125,8 +123,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-5">Our Newsletter</h3>
             <p className="mb-5 text-gray-700">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Molestias, omnis?
+              Subscribe to stay updated with the latest Wikipedia trends, writing tips, and industry insights.
             </p>
 
             <form className="space-y-3">

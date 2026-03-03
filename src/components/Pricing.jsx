@@ -6,7 +6,7 @@ export default function Pricing() {
     <section className="bg-[#f5ede6] py-16 relative">
       <div className="global-container">
         <div className="text-center mb-16">
-          <p className="text-sm text-gray-500 tracking-widest mb-2">PRICING</p>
+          <p className="text-sm text-gray-500 tracking-widest mb-2">Service Packages</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Pricing based on their version
           </h2>
@@ -15,36 +15,38 @@ export default function Pricing() {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "E-Book",
-              price: "$05",
+              title: "Eligibility Review",
+              price: "$XX",
               highlight: false,
               features: [
-                "Full digital edition of the book",
-                "Downloadable PDF & EPUB formats",
-                "Instant access after purchase",
-                "Lifetime file updates included",
+                "Notability audit",
+                "Source evaluation",
+                "Written eligibility report",
+                "Strategic recommendations",
               ],
             },
             {
-              title: "Bundle",
-              price: "$15",
+              title: "Wikipedia Draft Creation",
+              price: "$XX",
               highlight: true,
               features: [
-                "Complete digital edition (PDF + EPUB)",
-                "Premium hardcover printed copy",
-                "Free worldwide shipping",
-                "Exclusive bonus resources",
+                "Independent source research",
+                "Neutral draft writing",
+                "Citation structuring",
+                "Formatting compliance",
+                "Client review",
               ],
             },
             {
-              title: "Hardcover",
-              price: "$10",
+              title: "Full Service Publishing",
+              price: "$XX",
               highlight: false,
               features: [
-                "Beautifully printed hardcover book",
-                "High-quality paper and finish",
-                "Perfect for collectors & gifting",
-                "Access to companion downloads",
+                "Eligibility review",
+                "Draft creation",
+                "Submission handling",
+                "Reviewer response",
+                "Monitoring period",
               ],
             },
           ].map((plan, index) => (

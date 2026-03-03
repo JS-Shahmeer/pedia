@@ -1,5 +1,6 @@
 import React from "react";
 import { PlayCircle } from "lucide-react";
+import QuoteButton from "@/src/components/QuoteButton";
 
 export default function Hero() {
   return (
@@ -15,28 +16,20 @@ export default function Hero() {
 
       <div className="global-container">
         <div className="flex flex-col md:flex-row items-center">
-          
           {/* Left Content */}
           <div className="w-full md:w-7/12 lg:w-6/12 mb-10 md:mb-0">
             <div className="relative">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 capitalize">
-                Read more and make success the result of perfection.
+                Professional Wikipedia Page Creation Services
               </h1>
 
               <p className="text-gray-500 mb-8 text-lg">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                harum quibusdam, assumenda quia explicabo.
+                From eligibility review to publication and monitoring, we handle
+                every step with transparency, precision, and policy compliance.
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href=""
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-white font-medium hover:opacity-90 transition bg-[#8b6b5a]"
-                >
-                  Buy now
-                </a>
-
-                
+                <QuoteButton variant="default">Get a Free Notability Review</QuoteButton>
               </div>
             </div>
           </div>
@@ -49,7 +42,6 @@ export default function Hero() {
               className="mx-auto w-[300px] md:w-[400px] h-auto"
             />
           </div>
-
         </div>
       </div>
     </section>
