@@ -16,7 +16,7 @@ export default function SectionOne() {
             {/* large bottom-left image */}
             <Image
               src={Img1}
-              alt="Consultant advising"
+              alt="Writer working"
               className="rounded-xl shadow-lg w-full md:w-[400px] md:ml-auto"
             />
             {/* small top-right image */}
@@ -44,27 +44,37 @@ export default function SectionOne() {
           {/* right text */}
           <div className="md:w-1/2 w-full">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Expert Wikipedia Consultants Who Navigate the Rules with Precision
+              Trusted Wikipedia Page Creation Agency That Works With Precision &
+              Transparency
             </h2>
             <p className="text-gray-700 mb-4">
-              Our team of experienced Wikipedia consultants provides strategic
-              advice on notability, sourcing, conflict of interest, and page
-              management. We guide you step-by-step through the process to
-              ensure your project is set up for success.
+              Creating a Wikipedia page may seem simple until you actually
+              attempt to do it. Many people assume they can write about their
+              business or organization and publish it right away. In reality,
+              Wikipedia works very differently. It has strict rules about
+              neutrality, sourcing, and notability, and articles that fail to
+              meet those standards rarely survive for long.
             </p>
             <p className="text-gray-700 mb-6">
-              Whether you're drafting a new article or maintaining an existing
-              one, our consultants offer tailored recommendations that adhere to
-              Wikipedia's policies while protecting your reputation.
+              Every article we prepare is based on reliable sources and written
+              in a neutral tone. That means no exaggerated claims and no
+              unsupported statements. The result is an article that fits
+              naturally within Wikipedia’s encyclopedia style while accurately
+              representing the subject. <br />
+              Our goal is to help you with a professional Wikipedia page
+              creation that is built to last, whether you are a business leader,
+              author, researcher, or public figure.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="/contact"
                 className="bg-[#f4e7dc] text-black px-6 py-3 rounded-lg hover:bg-[#e8d8c7] transition"
               >
-                Hire A Wikipedia Consultant
+                Hire A Wikipedia Writer
               </a>
-              <QuoteButton variant="default"> Let’s Get Started</QuoteButton>
+              <QuoteButton varient="outline">
+                Get a Free Quote
+              </QuoteButton>
             </div>
           </div>
         </div>

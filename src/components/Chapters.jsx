@@ -4,38 +4,38 @@ import React from "react";
 const chapters = [
   {
     id: 1,
-    title: "Wikipedia Page Creation",
+    title: "Wikipedia Page Creation Services",
     description:
-      "We research, verify independent sources, draft neutral content, structure citations, and manage submission.",
+      "Our Wikipedia Page Creation Services begin with detailed research. We study and confirm notability before drafting anything. We structure citations correctly and adhere to Wikipedia's formatting guidelines.",
   },
   {
     id: 2,
-    title: "Wikipedia Editing & Improvements",
+    title: "Wikipedia Editing Services",
     description:
-      "We improve weak sourcing, remove biased language, fix formatting issues, and strengthen compliance.",
+      "Our team reviews the content, strengthens references, removes biased language, and fixes structural issues. We focus on clarity so the page meets community expectations.",
   },
   {
     id: 3,
-    title: "Deletion Defense",
+    title: "Wikipedia Publishing Services",
     description:
-      "If your page is nominated for deletion or rejected, we assess policy gaps and respond strategically.",
+      "Our Wikipedia Publishing Services guide you through the review process properly. We manage submissions and make necessary adjustments while maintaining neutrality.",
   },
   {
     id: 4,
-    title: "Notability Assessment",
+    title: "Wikipedia Consultant",
     description:
-      "Before drafting anything, we evaluate eligibility based on reliable third-party media coverage.",
+      "We provide an honest assessment of your situation. We evaluate risks and explain whether it is the right time to proceed.",
   },
   {
     id: 5,
-    title: "Content Dispute Resolution",
+    title: "Notability & Media Review",
     description:
-      "We assist with talk page discussions and policy clarification.",
+      "We analyze whether your sources meet Wikipedia’s reliability standards and identify gaps that may affect approval.",
   },
   {
     id: 6,
-    title: "Monitoring & Maintenance",
-    description: "After publication, we monitor edits and maintain compliance.",
+    title: "Ongoing Monitoring & Page Maintenance",
+    description: "Our monitoring and maintenance support helps track significant changes and review new edits for compliance with relevant regulations.",
   },
 ];
 

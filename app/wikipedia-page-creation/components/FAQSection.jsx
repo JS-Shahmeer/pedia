@@ -4,54 +4,54 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "How much does it cost to hire Wikipedia writers?",
+    question: "What is a Wikipedia page creation service?",
     answer:
-      "Costs depend on research depth and source availability. Wikipedia does not charge for pages. You only pay when you hire Wikipedia writers for professional help."
+      "It’s a service that helps prepare and submit a Wikipedia article properly. This usually includes writing the article and preparing it for review by Wikipedia editors."
   },
   {
-    question: "Is it allowed to hire Wikipedia writers?",
+    question: "Can anyone have a Wikipedia page?",
     answer:
-      "Yes. Paid editing is allowed if it is properly disclosed."
+      "No. Wikipedia only accepts topics that have real coverage in reliable media. If trusted publications have written about a person or company, there is a better chance that a page can be approved."
   },
   {
-    question: "Why should I hire Wikipedia writer support instead of writing myself?",
+    question: "Can I write my own Wikipedia page?",
     answer:
-      "Wikipedia discourages self-written pages due to conflicts of interest. Professional writers understand neutrality and citation rules."
+      "Yes, but it is not recommended. Writing about yourself or your own business can create bias, and Wikipedia editors often question those pages."
   },
   {
-    question: "What makes someone eligible for a Wikipedia page?",
+    question: "How long does it take to create a Wikipedia page?",
     answer:
-      "You need strong coverage in reliable and independent sources."
+      "There is no fixed timeline. Let’s discuss what you have in mind so we can give you a clear timeline."
   },
   {
-    question: "Will my page stay online forever?",
+    question: "Does Wikipedia charge money for pages?",
     answer:
-      "No page is guaranteed to stay live. It must continue to meet policies."
+      "No. Wikipedia is a free platform. It does not charge for publishing articles."
   },
   {
-    question: "Can you edit an existing page?",
+    question: "What sources are accepted on Wikipedia?",
     answer:
-      "Yes, we can. Our Wikipedia Editing Services improve structure and sourcing."
+      "Wikipedia prefers trusted publications and academic journals. Personal blogs or self-published content usually do not count."
   },
   {
-    question: "Can a Wikipedia page be removed after it is published?",
+    question: "What happens if my article is rejected?",
     answer:
-      "Yes, it can. If editors believe the page does not meet notability standards or violates content policies, it may be nominated for deletion."
+      "Editors normally explain the reason. In many cases the article can be improved with better sources or formatting and then submitted again."
   },
   {
-    question: "How long does it take to get a Wikipedia page approved?",
+    question: "Can an existing Wikipedia page be updated?",
     answer:
-      "Some submissions are reviewed within weeks, while others take longer, which depends on the backlog and editor availability."
+      "Yes. Information can be updated when new reliable sources are available."
   },
   {
-    question: "Do I need media coverage before creating a Wikipedia page?",
+    question: "Why do some Wikipedia pages get removed?",
     answer:
-      "A page is unlikely to qualify without reliable third-party sources, such as social media and press releases. So, yes, independent media coverage is essential."
+      "Pages are removed if they lack reliable sources or read like advertisements instead of neutral information."
   },
   {
-    question: "Do you provide support after the page goes live?",
+    question: "Why do people hire professionals for Wikipedia pages?",
     answer:
-      "Yes. After publication, we offer monitoring support to review major edits and maintain compliance."
+      "Many people prefer professional help to make sure the article follows the platform’s guidelines and avoids common mistakes."
   }
 ];
 

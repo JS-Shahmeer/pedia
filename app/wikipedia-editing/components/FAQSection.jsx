@@ -4,54 +4,54 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "How much does it cost to hire Wikipedia writers?",
+    question: "How much does a Wikipedia editing service cost?",
     answer:
-      "Costs depend on research depth and source availability. Wikipedia does not charge for pages. You only pay when you hire Wikipedia writers for professional help."
+      "Costs depend on research time and the number of sources required. Contact us so we can give you a clear estimate."
   },
   {
-    question: "Is it allowed to hire Wikipedia writers?",
+    question: "Can I create my own Wikipedia article?",
     answer:
-      "Yes. Paid editing is allowed if it is properly disclosed."
+      "Yes, anyone can contribute to Wikipedia. However, conflict-of-interest rules discourage people from writing about themselves or their own company."
   },
   {
-    question: "Why should I hire Wikipedia writer support instead of writing myself?",
+    question: "Why do many Wikipedia pages get rejected?",
     answer:
-      "Wikipedia discourages self-written pages due to conflicts of interest. Professional writers understand neutrality and citation rules."
+      "Most rejections happen because the subject does not meet notability requirements or the article lacks reliable sources."
   },
   {
-    question: "What makes someone eligible for a Wikipedia page?",
+    question: "How long does the Wikipedia approval process take?",
     answer:
-      "You need strong coverage in reliable and independent sources."
+      "Review time varies. Some submissions receive feedback within days while others may take several weeks, depending on reviewer availability."
   },
   {
-    question: "Will my page stay online forever?",
+    question: "What makes someone eligible for a Wikipedia article?",
     answer:
-      "No page is guaranteed to stay live. It must continue to meet policies."
+      "A person must receive significant coverage from reliable and independent publications such as magazines or academic journals."
   },
   {
-    question: "Can you edit an existing page?",
+    question: "Can an existing Wikipedia article be improved?",
     answer:
-      "Yes, we can. Our Wikipedia Editing Services improve structure and sourcing."
+      "Yes. A qualified Wikipedia editor can update information, correct formatting issues, and strengthen citations."
   },
   {
-    question: "Can a Wikipedia page be removed after it is published?",
+    question: "Does Wikipedia charge money for publishing pages?",
     answer:
-      "Yes, it can. If editors believe the page does not meet notability standards or violates content policies, it may be nominated for deletion."
+      "No. Wikipedia does not charge for creating articles. Professional services only charge for research, writing, and editing services."
   },
   {
-    question: "How long does it take to get a Wikipedia page approved?",
+    question: "Who writes Wikipedia articles?",
     answer:
-      "Some submissions are reviewed within weeks, while others take longer, which depends on the backlog and editor availability."
+      "Wikipedia articles come from volunteers around the world who follow community guidelines and editorial standards."
   },
   {
-    question: "Do I need media coverage before creating a Wikipedia page?",
+    question: "Can companies have Wikipedia pages?",
     answer:
-      "A page is unlikely to qualify without reliable third-party sources, such as social media and press releases. So, yes, independent media coverage is essential."
+      "Yes, but they must meet the same notability requirements as individuals and must include strong independent coverage."
   },
   {
-    question: "Do you provide support after the page goes live?",
+    question: "How do I start the process?",
     answer:
-      "Yes. After publication, we offer monitoring support to review major edits and maintain compliance."
+      "The first step involves checking whether reliable sources exist. Once notability is confirmed, editors can begin preparing the article draft."
   }
 ];
 

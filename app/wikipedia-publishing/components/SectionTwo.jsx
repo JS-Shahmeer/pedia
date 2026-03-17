@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  Search,
-  BookOpen,
-  PenTool,
+  Globe,
   Shield,
+  CheckCircle,
+  BookOpen,
   Send,
   Eye,
 } from "lucide-react";
@@ -11,40 +11,40 @@ import {
 export default function SectionTwo() {
   const features = [
     {
-      icon: Search,
-      title: "Notability Assessment",
+      icon: Globe,
+      title: "Reach a Wider Audience",
       description:
-        "We evaluate your eligibility for a Wikipedia page by reviewing media coverage, publications, and independent sources. Our consultants provide clear feedback on what qualifies and strategies to strengthen your profile.",
-    },
-    {
-      icon: BookOpen,
-      title: "Source Strategy",
-      description:
-        "Reliable sources are crucial for Wikipedia. We guide you in identifying and compiling trustworthy references from newspapers, journals, and academic publications to support your article.",
-    },
-    {
-      icon: PenTool,
-      title: "Content Planning",
-      description:
-        "Our experts help structure your Wikipedia article with neutral, factual content. We outline sections, ensure balance, and focus on presenting information objectively without bias.",
+        "A Wikipedia page lets people around the world learn about you or your organization. Our service makes sure that your page communicates your story clearly and factually without any biased statements.",
     },
     {
       icon: Shield,
-      title: "Compliance Guidance",
+      title: "Gain Credibility",
       description:
-        "Wikipedia has strict rules. We advise on policies, ethical standards, and best practices to avoid rejections and ensure your page meets community guidelines.",
+        "Wikipedia is trusted because it follows strict rules. A properly published article adds authority and trust to your profile or brand.",
+    },
+    {
+      icon: CheckCircle,
+      title: "Secure Accurate Representation",
+      description:
+        "Many pages contain outdated or incorrect information. Our Wikipedia publishing service USA makes sure your article presents verified, up-to-date facts.",
+    },
+    {
+      icon: BookOpen,
+      title: "Ensure Proper Citation",
+      description:
+        "Every claim must have a reliable source. Our editors research and verify references to meet Wikipedia’s standards.",
     },
     {
       icon: Send,
-      title: "Submission Strategy",
+      title: "Simplify the Submission Process",
       description:
-        "Navigating Wikipedia's submission process can be complex. Our consultants guide you through drafting, sandbox testing, and official channels for smooth approval.",
+        "Submitting a page yourself can be confusing and time-consuming. Our team manages everything from sandbox drafting to final submission. We make the process smooth and stress-free.",
     },
     {
       icon: Eye,
-      title: "Ongoing Advice",
+      title: "Support Long-Term Stability",
       description:
-        "After publication, pages need maintenance. We provide ongoing consultation to monitor edits, update information, and address any challenges that arise.",
+        "Our editors monitor your page after publishing. They quickly respond to edits or issues to keep your content accurate and compliant over time.",
     },
   ];
 
@@ -53,10 +53,10 @@ export default function SectionTwo() {
       <div className="global-container">
         <div className="text-center mb-12">
           <p className="text-sm text-gray-500 tracking-widest mb-2 uppercase">
-            What we offer
+            Why choose us
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Build Credibility with Wikipedia
+            What Wikipedia Our Publishing Service USA Helps You Achieve
           </h2>
           <div className="section-divider divider-traingle relative"></div>
         </div>

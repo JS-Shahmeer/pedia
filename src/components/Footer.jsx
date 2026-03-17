@@ -8,6 +8,8 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Logo from "@/src/images/logo.png";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -18,14 +20,17 @@ const Footer = () => {
           {/* Column 1 — Logo & About */}
           <div>
             <a href="/" className="logo flex items-center shrink-0">
-              <img
-                src="https://fixolab.github.io/wonted/one-page-version/assets/images/wonted-logo.png"
+              <Image
+                src={Logo}
                 alt="Write on Pedia"
-                className="h-10 w-auto object-contain"
+                className="h-16 w-auto min-w-40 object-contain object-left"
               />
             </a>
             <p className="leading-relaxed text-gray-700 mt-3">
-              Write on Pedia is your trusted partner for professional Wikipedia services. We specialize in creating, editing, publishing, and consulting on Wikipedia articles to enhance your online presence and credibility.
+              Write on Pedia is your trusted partner for professional Wikipedia
+              services. We specialize in creating, editing, publishing, and
+              consulting on Wikipedia articles to enhance your online presence
+              and credibility.
             </p>
           </div>
 
@@ -35,15 +40,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/wikipedia-writing-services"
+                  href="/wikipedia-page-creation"
                   className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
                 >
-                  Wikipedia Writing Services
+                  Wikipedia Page Creation Services
                 </a>
               </li>
               <li>
                 <a
-                  href="/wikipedia-editing-services"
+                  href="/wikipedia-editing"
                   className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
                 >
                   Wikipedia Editing Services
@@ -51,7 +56,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/wikipedia-publishing-services"
+                  href="/wikipedia-publishing"
                   className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
                 >
                   Wikipedia Publishing Services
@@ -65,7 +70,7 @@ const Footer = () => {
                   Wikipedia Consultant
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a
                   href="/about-us"
                   className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 hover:after:w-full inline-block"
@@ -80,7 +85,7 @@ const Footer = () => {
                 >
                   Contact Us
                 </a>
-              </li> */}
+              </li>
             </ul>
           </div>
 
@@ -88,15 +93,27 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-5">Contact Us</h3>
             <div className="space-y-4 text-gray-700">
-              <a href="https://maps.app.goo.gl/g8PqVjZuMWopCP376" target="_blank" className="flex items-start gap-3 group">
+              <a
+                href="https://maps.app.goo.gl/g8PqVjZuMWopCP376"
+                target="_blank"
+                className="flex items-start gap-3 group"
+              >
                 <FaMapMarkerAlt className="mt-1 text-[#b67878] group-hover:text-gray-800" />
-                <p className="group-hover:underline">3800 N Lamar Blvd Suite 200, Austin, TX 78756</p>
+                <p className="group-hover:underline">
+                  3800 N Lamar Blvd Suite 200, Austin, TX 78756
+                </p>
               </a>
-              <a href="mailto:info@writeonpedia.com" className="flex items-center gap-3 group">
+              <a
+                href="mailto:info@writeonpedia.com"
+                className="flex items-center gap-3 group"
+              >
                 <FaEnvelope className="text-[#b67878] group-hover:text-gray-800" />
                 <p className="group-hover:underline">info@writeonpedia.com</p>
               </a>
-              <a href="tel:+15127680328" className="flex items-center gap-3 group">
+              <a
+                href="tel:+15127680328"
+                className="flex items-center gap-3 group"
+              >
                 <FaPhoneAlt className="text-[#b67878] group-hover:text-gray-800" />
                 <p className="group-hover:underline">(512) 768-0328</p>
               </a>
@@ -123,7 +140,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-5">Our Newsletter</h3>
             <p className="mb-5 text-gray-700">
-              Subscribe to stay updated with the latest Wikipedia trends, writing tips, and industry insights.
+              Subscribe to stay updated with the latest Wikipedia trends,
+              writing tips, and industry insights.
             </p>
 
             <form className="space-y-3">

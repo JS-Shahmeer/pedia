@@ -5,7 +5,7 @@ import AwardsGroupImg from "@/src/images/awards-group.png";
 import BgImage from "@/src/images/banner-bg.webp";
 import LeafImg from "@/src/images/leaf.webp";
 import Image from "next/image";
-import Img1 from "@/src/images/additions/9.webp";
+import Img1 from "@/src/images/additions/5.webp";
 import QuoteButton from "@/src/components/QuoteButton";
 
 export default function Hero() {
@@ -26,18 +26,25 @@ export default function Hero() {
           <div className="w-full md:w-6/12 mb-10 md:mb-0">
             <div className="relative">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 capitalize">
-                Hire Expert Wikipedia Consultants For Your Project
+                Professional Wikipedia Page Creation Service USA
               </h1>
 
               <p className="text-gray-500 mb-8 text-lg">
-                Our seasoned Wikipedia consultants offer strategic guidance on
-                notability, sourcing, conflict policies, and ongoing page care.
-                We empower you with the knowledge to engage confidently with the
-                Wikipedia community.
+                Our wikipedia page creation service USA is designed for
+                individuals and organizations that want to approach the platform
+                the right way. We focus on the research and writing style that
+                Wikipedia expects instead of guessing what might work.
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
-               <QuoteButton variant="default"> Book a free consultation</QuoteButton>
+                <QuoteButton variant="default">Get your own Wikipedia Page</QuoteButton>
+                {/* <a
+                  href=""
+                  className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+                >
+                  <PlayCircle className="w-5 h-5" />
+                  About Book
+                </a> */}
               </div>
               <Image
                 src={AwardsGroupImg}
@@ -52,7 +59,7 @@ export default function Hero() {
             <Image
               src={Img1}
               alt="Lady Image"
-              className="mx-auto w-[300px] md:w-[700px] h-auto"
+              className="mx-auto w-[300px] md:w-[500px] h-auto"
             />
           </div>
         </div>

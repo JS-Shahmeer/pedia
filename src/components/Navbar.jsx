@@ -2,11 +2,15 @@
 
 import React, { useEffect, useState } from "react";
 import QuoteButton from "@/src/components/QuoteButton";
+import Logo from "@/src/images/logo.png";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [openSubmenus, setOpenSubmenus] = useState({})
+  const pathname = usePathname()
 
   // shared navigation data
   const menuItems = [
@@ -15,9 +19,9 @@ export default function Navbar() {
     {
       label: "Services",
       submenu: [
-        { label: "Wikipedia Writing Services", href: "/wikipedia-writing-services" },
-        { label: "Wikipedia Editing Services", href: "/wikipedia-editing-services" },
-        { label: "Wikipedia Publishing Services", href: "/wikipedia-publishing-services" },
+        { label: "Wikipedia Page Creation Services", href: "/wikipedia-page-creation" },
+        { label: "Wikipedia Editing Services", href: "/wikipedia-editing" },
+        { label: "Wikipedia Publishing Services", href: "/wikipedia-publishing" },
         { label: "Wikipedia Consultant", href: "/wikipedia-consultant" },
       ],
     },
@@ -47,10 +51,10 @@ export default function Navbar() {
         
         {/* Logo */}
         <a href="/" className="logo flex items-center shrink-0">
-          <img
-            src="https://fixolab.github.io/wonted/one-page-version/assets/images/wonted-logo.png"
+          <Image
+            src={Logo}
             alt="Write on Pedia"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto min-w-40 object-contain object-left"
           />
         </a>
 
@@ -63,7 +67,7 @@ export default function Navbar() {
                   <>
                     <button
                       type="button"
-                      className="text-gray-700 cursor-pointer hover:text-[#8b6b5a] flex items-center relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 group-hover:after:w-full"
+                      className={`text-gray-700 cursor-pointer hover:text-[#8b6b5a] flex items-center relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.submenu.some(sub => sub.href === pathname) ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'}`}
                       aria-haspopup="true"
                       aria-expanded={!!openSubmenus.services}
                       onClick={() => toggleSubmenu('services')}
@@ -84,7 +88,7 @@ export default function Navbar() {
                       {item.submenu.map((sub) => (
                         <a
                           key={sub.href}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                          className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 ${sub.href === pathname ? 'bg-[#b67878] text-white hover:text-black font-semibold' : ''}`}
                           href={sub.href}
                         >
                           {sub.label}
@@ -95,7 +99,7 @@ export default function Navbar() {
                 ) : (
                   <a
                     href={item.href}
-                    className="text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 group-hover:after:w-full block"
+                    className={`text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.href === pathname ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'} block`}
                   >
                     {item.label}
                   </a>
@@ -144,7 +148,7 @@ export default function Navbar() {
                 {item.submenu ? (
                   <>
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 group-hover:after:w-full">{item.label}</span>
+                      <span className={`text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.submenu.some(sub => sub.href === pathname) ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'}`}>{item.label}</span>
                       <button onClick={() => toggleSubmenu('services')} className="p-1" aria-label="Toggle submenu">
                         ▾
                       </button>
@@ -153,7 +157,7 @@ export default function Navbar() {
                       <ul className="mt-2 pl-4 space-y-1">
                         {item.submenu.map((sub) => (
                           <li key={sub.href}>
-                            <a href={sub.href} className="text-gray-600">
+                            <a href={sub.href} className={`text-gray-600 ${sub.href === pathname ? 'text-[#8b6b5a] font-semibold' : ''}`}>
                               {sub.label}
                             </a>
                           </li>
@@ -162,7 +166,7 @@ export default function Navbar() {
                     )}
                   </>
                 ) : (
-                  <a href={item.href} className="text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 group-hover:after:w-full block">
+                  <a href={item.href} className={`text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.href === pathname ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'} block`}>
                     {item.label}
                   </a>
                 )}

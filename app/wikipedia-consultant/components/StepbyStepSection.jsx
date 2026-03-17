@@ -3,31 +3,32 @@
 import React from "react";
 import LeafImg from "@/src/images/leaf.webp";
 import Image from "next/image";
+import QuoteButton from "@/src/components/QuoteButton";
 
 const steps = [
   {
-    title: "Eligibility & Notability Check",
-    desc: `Our professional Wikipedia consultants conduct a detailed notability check, evaluating your media coverage, recognition, and independent sources against Wikipedia’s strict eligibility criteria. This complimentary consultation determines if your achievements qualify and outlines the next steps for Wikipedia page strategy.`,
+    title: "Initial Consultation",
+    desc: `We start with a detailed discussion about your goals, background, and existing media coverage. Our consultants assess your current online presence and discuss what a Wikipedia page could achieve for you.`,
   },
   {
-    title: "Source Compilation & Verification",
-    desc: `We carefully compile and verify citations from reliable sources that support your notability and credibility. Our experienced consultants research media mentions, academic references, and industry publications to ensure every claim meets Wikipedia’s strict sourcing standards.`,
+    title: "Notability Review",
+    desc: `Our experts evaluate whether you meet Wikipedia's notability guidelines. We review publications, awards, and independent sources to determine eligibility and identify areas for improvement.`,
   },
   {
-    title: "Draft Creation in Sandbox",
-    desc: `Our skilled Wikipedia consultant prepares a neutral, fact-checked draft in Wikipedia’s Sandbox, following all content guidelines. This key step in our premium consulting service ensures every detail is objective, well-formatted, and compliant with the encyclopedia’s professional standards.`,
+    title: "Strategy Development",
+    desc: `Based on our assessment, we develop a customized strategy for your Wikipedia presence. This includes timelines, source gathering plans, and content outlines tailored to your unique situation.`,
   },
   {
-    title: "Internal Compliance Review",
-    desc: `Multiple senior consultants review your draft for tone, formatting, citations, and compliance from every angle. This quality check within our Wikipedia consulting services ensures top advisory standards, reducing the risk of rejection and ensuring smooth community approval.`,
+    title: "Content Guidance",
+    desc: `We provide expert guidance on structuring your article, ensuring neutrality, and selecting appropriate content. Our consultants help you draft sections that comply with Wikipedia's standards.`,
   },
   {
-    title: "Submission via Articles for Creation",
-    desc: `We transparently submit your page through Wikipedia’s official Articles for Creation process, managing all technical steps and editor communications. Our professional Wikipedia consultants ensure full compliance with ethical standards and submission protocols for conflict-free, transparent Wikipedia publishing.`,
+    title: "Submission Assistance",
+    desc: `When you're ready, we guide you through the submission process. Our team advises on sandbox testing, formatting, and navigating Wikipedia's review channels for the best chance of approval.`,
   },
   {
-    title: "Ongoing Page Stewardship",
-    desc: `We offer ongoing monitoring to maintain your page’s accuracy and compliance after publication. Our Wikipedia consultants provide regular updates, protect against edits, and swiftly address issues—ensuring your digital legacy remains stable and credible over time.`,
+    title: "Post-Publication Support",
+    desc: `After your page goes live, we offer ongoing consultation for maintenance, updates, and addressing any community feedback. Our experts ensure your page remains compliant and current.`,
   },
 ];
 
@@ -53,7 +54,7 @@ export default function StepbyStepSection() {
               Service Process
             </h2>
 
-            <p className="mt-6 text-gray-600 text-base leading-relaxed">
+            <p className="my-6 text-gray-600 text-base leading-relaxed">
               Our professional Wikipedia consultants follow a careful process to
               ensure your page meets all Wikipedia standards. This structured
               approach through our consulting service guarantees compliance and
@@ -61,10 +62,7 @@ export default function StepbyStepSection() {
               transparency.
             </p>
 
-            <button className="mt-8 inline-flex items-center gap-2 bg-[#8b6b5a] hover:bg-[#7a5a4a] text-white px-6 py-3 rounded-full text-sm font-medium transition">
-              Let’s Get Started
-              <span className="text-lg">➜</span>
-            </button>
+            <QuoteButton variant="default"> Let’s Get Started</QuoteButton>
           </div>
 
           {/* Right Cards */}

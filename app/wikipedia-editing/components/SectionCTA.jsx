@@ -14,19 +14,19 @@ export default function SectionCTA() {
       <div className="global-container max-w-4xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4 md:mb-6">
-          Ready to <span className="font-extrabold">Hire</span> a Wikipedia Consultant?
+          Ready to <span className="font-extrabold">Hire</span> a Wikipedia Editor?
         </h2>
 
         {/* Subtext */}
         <p className="text-sm md:text-xl text-black mb-8 md:mb-10 lg:mb-12 leading-relaxed px-4 md:px-0">
-          Let our professional Wikipedia consultants handle everything from notability checks to final approval, all with complete transparency and ethical practices.
+          Our team will guide you through every step from research to submission. We ensure the article follows the correct structure and sourcing standards.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 px-4">
           {/* Hire Button */}
           <a href="/contact" className="w-full sm:w-auto bg-[#8b6b5a] hover:bg-[#7a5a4a] text-white font-semibold py-3 md:py-3.5 px-6 md:px-8 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 shadow-lg hover:shadow-xl">
-            <span>Hire a Wikipedia Consultant</span>
+            <span>Hire a Wikipedia Editor</span>
             <Phone size={18} className="ml-1" />
           </a>
 

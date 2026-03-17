@@ -4,54 +4,54 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "How much does it cost to hire Wikipedia writers?",
+    question: "How much does a Wikipedia publishing service cost?",
     answer:
-      "Costs depend on research depth and source availability. Wikipedia does not charge for pages. You only pay when you hire Wikipedia writers for professional help."
+      "Costs are based on research, writing, and submission requirements. Prices depend on the complexity of the page and the number of sources needed."
   },
   {
-    question: "Is it allowed to hire Wikipedia writers?",
+    question: "Can I publish my own Wikipedia page?",
     answer:
-      "Yes. Paid editing is allowed if it is properly disclosed."
+      "Yes, but Wikipedia discourages self-promotion. Pages must stay neutral and rely on independent, reliable sources."
   },
   {
-    question: "Why should I hire Wikipedia writer support instead of writing myself?",
+    question: "What is included in your Wikipedia publishing service USA?",
     answer:
-      "Wikipedia discourages self-written pages due to conflicts of interest. Professional writers understand neutrality and citation rules."
+      "We handle notability checks, source verification, drafting, submission, and ongoing monitoring after publication."
   },
   {
-    question: "What makes someone eligible for a Wikipedia page?",
+    question: "How long does it take to publish a Wikipedia page?",
     answer:
-      "You need strong coverage in reliable and independent sources."
+      "Approval time depends on the review queue and article complexity. It can take a few days to several weeks."
   },
   {
-    question: "Will my page stay online forever?",
+    question: "Who writes Wikipedia pages?",
     answer:
-      "No page is guaranteed to stay live. It must continue to meet policies."
+      "Volunteer contributors and professional Wikipedia writers create and edit pages following strict guidelines."
   },
   {
-    question: "Can you edit an existing page?",
+    question: "Can an existing Wikipedia article be updated?",
     answer:
-      "Yes, we can. Our Wikipedia Editing Services improve structure and sourcing."
+      "Yes. Our editors can improve existing pages, correct information, and strengthen citations."
   },
   {
-    question: "Can a Wikipedia page be removed after it is published?",
+    question: "Does Wikipedia charge for publishing?",
     answer:
-      "Yes, it can. If editors believe the page does not meet notability standards or violates content policies, it may be nominated for deletion."
+      "No. Wikipedia is free. Costs apply only if you hire professionals for research, drafting, and submission assistance."
   },
   {
-    question: "How long does it take to get a Wikipedia page approved?",
+    question: "Who can use this service?",
     answer:
-      "Some submissions are reviewed within weeks, while others take longer, which depends on the backlog and editor availability."
+      "Individuals, organizations, authors, and businesses that meet Wikipedia’s notability and source requirements can benefit from our service."
   },
   {
-    question: "Do I need media coverage before creating a Wikipedia page?",
+    question: "How do I get started with Wikipedia publishing?",
     answer:
-      "A page is unlikely to qualify without reliable third-party sources, such as social media and press releases. So, yes, independent media coverage is essential."
+      "The first step is a notability assessment. Once confirmed, our editors can draft your page, verify sources, and handle submission."
   },
   {
-    question: "Do you provide support after the page goes live?",
+    question: "Will my Wikipedia page remain online forever?",
     answer:
-      "Yes. After publication, we offer monitoring support to review major edits and maintain compliance."
+      "Wikipedia pages can change or be removed if they no longer meet guidelines. Our team monitors pages to maintain accuracy and compliance."
   }
 ];
 

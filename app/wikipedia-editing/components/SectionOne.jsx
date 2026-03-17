@@ -16,7 +16,7 @@ export default function SectionOne() {
             {/* large bottom-left image */}
             <Image
               src={Img1}
-              alt="Consultant advising"
+              alt="Editor reviewing"
               className="rounded-xl shadow-lg w-full md:w-[400px] md:ml-auto"
             />
             {/* small top-right image */}
@@ -44,25 +44,29 @@ export default function SectionOne() {
           {/* right text */}
           <div className="md:w-1/2 w-full">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Expert Wikipedia Consultants Who Navigate the Rules with Precision
+              Experienced Wikipedia Editors Who Understand the Platform
             </h2>
             <p className="text-gray-700 mb-4">
-              Our team of experienced Wikipedia consultants provides strategic
-              advice on notability, sourcing, conflict of interest, and page
-              management. We guide you step-by-step through the process to
-              ensure your project is set up for success.
+              Our team includes experienced Wikipedia editor specialists who
+              understand these expectations well. They study every project
+              carefully before they start writing or editing. Our editors check
+              existing media coverage and organize the information in a format
+              that fits the encyclopedia’s style.
             </p>
             <p className="text-gray-700 mb-6">
-              Whether you're drafting a new article or maintaining an existing
-              one, our consultants offer tailored recommendations that adhere to
-              Wikipedia's policies while protecting your reputation.
+              Clients often ask about professional Wikipedia page creation
+              because they want their achievements presented correctly. That
+              requires structure and strong references. Our editors work through
+              each section patiently so the final draft reads clearly and
+              naturally. Every project follows reliable sources and strict
+              compliance with Wikipedia policies.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="/contact"
                 className="bg-[#f4e7dc] text-black px-6 py-3 rounded-lg hover:bg-[#e8d8c7] transition"
               >
-                Hire A Wikipedia Consultant
+                Hire A Wikipedia Editor
               </a>
               <QuoteButton variant="default"> Let’s Get Started</QuoteButton>
             </div>

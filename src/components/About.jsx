@@ -1,12 +1,7 @@
 import React from "react";
 import { Check } from "lucide-react";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaYoutube,
-  FaWhatsapp,
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
+import Img1 from "@/src/images/additions/2.webp";
 
 const About = () => {
   return (
@@ -16,7 +11,7 @@ const About = () => {
         <div className="text-center mb-16">
           <p className="text-sm text-gray-500 tracking-widest mb-2">ABOUT US</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            About Our Wikipedia Services
+            About Write on Pedia
           </h2>
           <div className="section-divider divider-traingle relative"></div>
         </div>
@@ -30,10 +25,10 @@ const About = () => {
 
             {/* Main image */}
             <div className="relative rounded-xl overflow-hidden shadow-xl">
-              <img
-                src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+              <Image
+                src={Img1}
                 alt="About"
-                className="w-full h-full object-cover"
+                className="w-full h-full max-h-[450px] object-cover"
               />
 
               {/* Play button overlay */}
@@ -52,9 +47,12 @@ const About = () => {
             </h3> */}
 
             <p className="text-gray-600 leading-relaxed mb-6 text-lg font-medium">
-              Building a Wikipedia page requires more than writing — it requires
-              eligibility, independent sourcing, and strict neutrality. We
-              specialize in:
+              Write on Pedia is a trusted Wikipedia writing service USA working
+              with clients across the country. When you hire Wikipedia writers,
+              you need people who understand notability and independent media
+              coverage with a neutral tone. Our team studies your coverage
+              first. If you qualify, we move forward. If you don’t, we will tell
+              you honestly.
             </p>
 
             {/* Bullet Points */}
@@ -75,7 +73,7 @@ const About = () => {
             </ul>
 
             {/* Social Icons */}
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               {[
                 { icon: FaFacebookF, link: "https://facebook.com" },
                 { icon: FaXTwitter, link: "https://x.com" },
@@ -96,7 +94,7 @@ const About = () => {
                   </a>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -2,9 +2,9 @@ import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
 
 export const metadata = {
-  title: "Write on Pedia – Home",
-  description: "Professional Wikipedia writing, editing, publishing and consultancy services to help you get listed on Wikipedia.",
-  alternates: { canonical: "https://yourdomain.com/" },
+  title: "Hire Professional Wikipedia Writers USA - Write On Pedia",
+  description: "Our team of Wikipedia writers offers reliable support for Wikipedia page creation and publishing services across USA. Hire Wikipedia writers today.",
+  alternates: { canonical: "https://writeonpedia.com/" },
 };
 import About from "../src/components/About";
 import Testimonials from "../src/components/Testimonials";
@@ -28,7 +28,7 @@ export default function Home() {
       <Chapters />
       <SubscribeCTA />
       <Portfolio />
-      <Pricing />
+      {/* <Pricing /> */}
       <Testimonials />
       <FAQSection />
       <CTA />

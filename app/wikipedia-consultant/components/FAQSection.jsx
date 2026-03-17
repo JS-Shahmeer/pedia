@@ -4,54 +4,54 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "How much does it cost to hire Wikipedia writers?",
+    question: "What is Wikipedia consulting?",
     answer:
-      "Costs depend on research depth and source availability. Wikipedia does not charge for pages. You only pay when you hire Wikipedia writers for professional help."
+      "Wikipedia consulting involves expert guidance on creating and maintaining Wikipedia pages. Our consultants assess eligibility, provide strategy advice, and help navigate the complex process of getting approved."
   },
   {
-    question: "Is it allowed to hire Wikipedia writers?",
+    question: "How much does Wikipedia consulting cost?",
     answer:
-      "Yes. Paid editing is allowed if it is properly disclosed."
+      "Consulting fees vary based on the scope of advice needed. We offer packages for notability assessment, strategy development, and ongoing guidance. Contact us for a customized quote."
   },
   {
-    question: "Why should I hire Wikipedia writer support instead of writing myself?",
+    question: "Do you create the Wikipedia page for me?",
     answer:
-      "Wikipedia discourages self-written pages due to conflicts of interest. Professional writers understand neutrality and citation rules."
+      "As consultants, we provide guidance and strategy, but we don't directly create or edit pages. We help you understand the process and prepare your materials for submission."
   },
   {
     question: "What makes someone eligible for a Wikipedia page?",
     answer:
-      "You need strong coverage in reliable and independent sources."
+      "Eligibility depends on notability guidelines. You need significant coverage in independent, reliable sources. Our consultants evaluate your media presence and advise on strengthening it."
   },
   {
-    question: "Will my page stay online forever?",
+    question: "How long does the consulting process take?",
     answer:
-      "No page is guaranteed to stay live. It must continue to meet policies."
+      "The timeline depends on your needs. A basic notability assessment can be completed in days, while comprehensive strategy development may take weeks to gather all necessary information."
   },
   {
-    question: "Can you edit an existing page?",
+    question: "Can you help with existing Wikipedia pages?",
     answer:
-      "Yes, we can. Our Wikipedia Editing Services improve structure and sourcing."
+      "Yes, we provide consultation on improving existing pages, addressing community feedback, and maintaining compliance with Wikipedia policies."
   },
   {
-    question: "Can a Wikipedia page be removed after it is published?",
+    question: "What if my notability assessment shows I'm not ready?",
     answer:
-      "Yes, it can. If editors believe the page does not meet notability standards or violates content policies, it may be nominated for deletion."
+      "If you don't meet current guidelines, we provide specific recommendations for building your media presence and suggest timelines for re-evaluation."
   },
   {
-    question: "How long does it take to get a Wikipedia page approved?",
+    question: "Do you provide ongoing support after consultation?",
     answer:
-      "Some submissions are reviewed within weeks, while others take longer, which depends on the backlog and editor availability."
+      "Yes, we offer follow-up consultations to address questions during the submission process and provide advice on maintaining your page post-publication."
   },
   {
-    question: "Do I need media coverage before creating a Wikipedia page?",
+    question: "Is consulting allowed under Wikipedia's rules?",
     answer:
-      "A page is unlikely to qualify without reliable third-party sources, such as social media and press releases. So, yes, independent media coverage is essential."
+      "Yes, providing strategic advice and guidance is permitted. However, direct editing or writing must be disclosed if paid services are involved."
   },
   {
-    question: "Do you provide support after the page goes live?",
+    question: "Who can benefit from Wikipedia consulting?",
     answer:
-      "Yes. After publication, we offer monitoring support to review major edits and maintain compliance."
+      "Individuals, organizations, and businesses seeking to establish or enhance their online credibility through Wikipedia can benefit from our consulting services."
   }
 ];
 

@@ -5,7 +5,7 @@ import AwardsGroupImg from "@/src/images/awards-group.png";
 import BgImage from "@/src/images/banner-bg.webp";
 import LeafImg from "@/src/images/leaf.webp";
 import Image from "next/image";
-import Img1 from "@/src/images/additions/9.webp";
+import Img1 from "@/src/images/additions/7.webp";
 import QuoteButton from "@/src/components/QuoteButton";
 
 export default function Hero() {
@@ -23,21 +23,22 @@ export default function Hero() {
       <div className="global-container relative z-10">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Content */}
-          <div className="w-full md:w-6/12 mb-10 md:mb-0">
+          <div className="w-full md:w-7/12 lg:w-6/12 mb-10 md:mb-0">
             <div className="relative">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 capitalize">
-                Hire Expert Wikipedia Consultants For Your Project
+                No. 1 Global Wikipedia Publishing Service
               </h1>
 
               <p className="text-gray-500 mb-8 text-lg">
-                Our seasoned Wikipedia consultants offer strategic guidance on
-                notability, sourcing, conflict policies, and ongoing page care.
-                We empower you with the knowledge to engage confidently with the
-                Wikipedia community.
+                Our Wikipedia publishing service helps you navigate the entire
+                process so your page gets approved and remains stable over time.
+                You work with editors who know Wikipedia inside out. We ensure
+                your content is properly sourced and formatted according to
+                Wikipedia standards.
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
-               <QuoteButton variant="default"> Book a free consultation</QuoteButton>
+                <QuoteButton variant="default">Let’s Get Started</QuoteButton>
               </div>
               <Image
                 src={AwardsGroupImg}
@@ -48,7 +49,7 @@ export default function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="w-full md:w-6/12 md:ml-auto text-center mt-10 md:mt-0">
+          <div className="w-full md:w-5/12 lg:w-5/12 lg:ml-auto text-center mt-10 md:mt-0">
             <Image
               src={Img1}
               alt="Lady Image"

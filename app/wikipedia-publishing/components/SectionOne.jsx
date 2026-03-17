@@ -16,7 +16,7 @@ export default function SectionOne() {
             {/* large bottom-left image */}
             <Image
               src={Img1}
-              alt="Consultant advising"
+              alt="Publisher reviewing"
               className="rounded-xl shadow-lg w-full md:w-[400px] md:ml-auto"
             />
             {/* small top-right image */}
@@ -44,25 +44,32 @@ export default function SectionOne() {
           {/* right text */}
           <div className="md:w-1/2 w-full">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Expert Wikipedia Consultants Who Navigate the Rules with Precision
+              Expert Wikipedia Publishing Service USA - Editors Who Handle The
+              Submission
             </h2>
             <p className="text-gray-700 mb-4">
-              Our team of experienced Wikipedia consultants provides strategic
-              advice on notability, sourcing, conflict of interest, and page
-              management. We guide you step-by-step through the process to
-              ensure your project is set up for success.
+              Publishing a Wikipedia page is more than just clicking submit.
+              Wikipedia has strict rules, and even a well-written article can
+              get rejected if it does not follow guidelines. Our Wikipedia
+              publishing service helps you navigate the entire process so your
+              page gets approved and remains stable over time.
             </p>
             <p className="text-gray-700 mb-6">
-              Whether you're drafting a new article or maintaining an existing
-              one, our consultants offer tailored recommendations that adhere to
-              Wikipedia's policies while protecting your reputation.
+              Our team includes professional Wikipedia writers who understand
+              these requirements deeply. They carefully check all sources,
+              structure the content clearly, and ensure it follows Wikipedia
+              formatting rules. Hire expert Wikipedia editor from us who will
+              handle the publishing process step by step, whether you need a
+              biography, corporate page, or professional profile. They focus on
+              clarity and compliance so that your page passes Wikipedia’s review
+              smoothly.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="/contact"
                 className="bg-[#f4e7dc] text-black px-6 py-3 rounded-lg hover:bg-[#e8d8c7] transition"
               >
-                Hire A Wikipedia Consultant
+                Hire A Wikipedia Publisher
               </a>
               <QuoteButton variant="default"> Let’s Get Started</QuoteButton>
             </div>

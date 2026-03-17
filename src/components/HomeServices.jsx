@@ -5,21 +5,21 @@ import { FaFileAlt, FaDice, FaBullseye } from "react-icons/fa"; // Using react-i
 const cards = [
   {
     icon: <FaFileAlt className="text-white w-6 h-6" />,
-    title: "Credibility",
+    title: "Credible Presence",
     description:
-      "A properly structured and well-sourced Wikipedia presence enhances trust and public perception.",
+      "A Wikipedia page builds trust when it is written the right way. Our Wikipedia writing service focuses on facts, not marketing language.",
   },
   {
     icon: <FaDice className="text-white w-6 h-6" />,
-    title: "Stability",
+    title: "Stronger Approval Chances",
     description:
-      "We build pages designed to withstand scrutiny, community review, and policy checks.",
+      "We check notability before writing. We use reliable sources. We format citations properly. You reduce avoidable mistakes when you hire Wikipedia writer from us.",
   },
   {
     icon: <FaBullseye className="text-white w-6 h-6" />,
-    title: "Compliance",
+    title: "Long-Term Stability",
     description:
-      "Every draft follows neutrality, citation standards, and formatting guidelines.",
+      "Wikipedia pages can be edited or challenged. Our Wikipedia writers for hire structure content carefully to meet community standards.",
   },
 ];
 
@@ -30,13 +30,14 @@ const HomeServices = () => {
     <section className="w-full py-20 bg-white">
       <div className="global-container flex flex-col gap-12">
         {/* Section Title */}
-        <div className="">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            WHAT YOU’LL ACHIEVE
-          </h2>
-          <p className="text-gray-600 max-w-xl">
-            What You’ll Achieve With Our Services.
+        <div className="text-center">
+          <p className="text-gray-600 mb-4 uppercase tracking-widest text-sm">
+            WHY CHOOSE US
           </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            What You Will Accomplish
+          </h2>
+          <div className="section-divider divider-traingle relative"></div>
         </div>
 
         {/* Cards */}
@@ -44,7 +45,7 @@ const HomeServices = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`bg-white p-6 rounded-xl shadow-lg border border-gray-100 relative ${marginClasses[index]}`}
+              className={`bg-white p-6 rounded-xl transition-all hover:shadow-xl shadow-lg border border-gray-100 relative ${marginClasses[index]}`}
             >
               <div className="bg-[#7c5a59] p-4 w-12 h-12 flex items-center justify-center rounded shadow mb-4">
                 {card.icon}
@@ -53,9 +54,12 @@ const HomeServices = () => {
                 {card.title}
               </h3>
               <p className="text-gray-600 mb-4">{card.description}</p>
-              <span className="text-[#7c5a59] font-medium cursor-pointer flex items-center">
+              <a
+                href="/contact"
+                className="text-[#7c5a59] hover:text-black font-medium cursor-pointer flex items-center"
+              >
                 Read more <ChevronRight size={16} className="ml-1" />
-              </span>
+              </a>
             </div>
           ))}
         </div>

@@ -5,13 +5,13 @@ import AwardsGroupImg from "@/src/images/awards-group.png";
 import BgImage from "@/src/images/banner-bg.webp";
 import LeafImg from "@/src/images/leaf.webp";
 import Image from "next/image";
-import Img1 from "@/src/images/additions/9.webp";
+import Img1 from "@/src/images/additions/8.webp";
 import QuoteButton from "@/src/components/QuoteButton";
 
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen pb-16 md:pb-24 pt-32 md:pt-40 bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen pb-16 md:pb-24 pt-32 md:pt-32 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${BgImage.src})` }}
     >
       <div className="circle x1 absolute" />
@@ -26,18 +26,26 @@ export default function Hero() {
           <div className="w-full md:w-6/12 mb-10 md:mb-0">
             <div className="relative">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 capitalize">
-                Hire Expert Wikipedia Consultants For Your Project
+                Wikipedia Editing Service USA
               </h1>
 
               <p className="text-gray-500 mb-8 text-lg">
-                Our seasoned Wikipedia consultants offer strategic guidance on
-                notability, sourcing, conflict policies, and ongoing page care.
-                We empower you with the knowledge to engage confidently with the
-                Wikipedia community.
+                Our Wikipedia editing service USA helps you create pages that
+                follow these rules from the very beginning. You work with people
+                who already understand how the system works instead of guessing
+                what Wikipedia accepts.
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
-               <QuoteButton variant="default"> Book a free consultation</QuoteButton>
+                <QuoteButton variant="default">Improve Your Wikipedia Page</QuoteButton>
+
+                {/* <a
+                  href=""
+                  className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+                >
+                  <PlayCircle className="w-5 h-5" />
+                  About Book
+                </a> */}
               </div>
               <Image
                 src={AwardsGroupImg}

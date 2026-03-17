@@ -1,12 +1,14 @@
 import React from "react";
 import { PlayCircle } from "lucide-react";
 import QuoteButton from "@/src/components/QuoteButton";
+import Img1 from "@/src/images/additions/10.webp";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden min-h-screen bg-[#f5ebe6] pb-16 md:pb-24 pt-32 md:pt-40"
+      className="relative overflow-hidden bg-[#f5ebe6] pb-0 pt-32 md:pt-28"
     >
       <div className="circle x1 absolute" />
       <div className="circle x2 absolute" />
@@ -17,29 +19,34 @@ export default function Hero() {
       <div className="global-container">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Content */}
-          <div className="w-full md:w-7/12 lg:w-6/12 mb-10 md:mb-0">
+          <div className="w-full md:w-6/12 mb-10 md:mb-0">
             <div className="relative">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 capitalize">
-                Professional Wikipedia Page Creation Services
+                Professional{" "}
+                <span className="text-[#a96969]">Wikipedia writers</span> You
+                Can Trust
               </h1>
 
               <p className="text-gray-500 mb-8 text-lg">
-                From eligibility review to publication and monitoring, we handle
-                every step with transparency, precision, and policy compliance.
+                Looking to build a real presence on Wikipedia? Our experienced
+                Wikipedia writers help you create and publish pages that follow
+                all rules and policies.
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
-                <QuoteButton variant="default">Get a Free Notability Review</QuoteButton>
+                <QuoteButton variant="default">
+                  Get a Free Notability Review
+                </QuoteButton>
               </div>
             </div>
           </div>
 
           {/* Right Image */}
-          <div className="w-full md:w-5/12 lg:w-5/12 lg:ml-auto text-center mt-10 md:mt-0">
-            <img
-              src="https://fixolab.github.io/wonted/one-page-version/assets/images/book2.png"
-              alt="Book"
-              className="mx-auto w-[300px] md:w-[400px] h-auto"
+          <div className="w-full md:w-6/12 text-center mt-10 md:mt-0">
+            <Image
+              src={Img1}
+              alt="Lady Image"
+              className="mx-auto w-[300px] md:w-[700px] h-auto"
             />
           </div>
         </div>

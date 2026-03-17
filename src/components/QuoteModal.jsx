@@ -1,18 +1,24 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Swal from "sweetalert2";
 import { X } from "lucide-react";
 
 const QuoteModal = ({ isOpen, onClose }) => {
+  const [mounted, setMounted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    service: "wikipedia-writing",
+    service: "wikipedia-page-creation",
     message: "",
   });
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,7 +49,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
           name: "",
           email: "",
           company: "",
-          service: "wikipedia-writing",
+          service: "wikipedia-page-creation",
           message: "",
         });
         onClose();
@@ -63,24 +69,24 @@ const QuoteModal = ({ isOpen, onClose }) => {
     }
   };
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
-  return (
+  const modalContent = (
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[60] transition-opacity duration-300"
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm z-60 transition-opacity duration-300"
         onClick={onClose}
       />
 
       {/* Modal */}
       <div
-        className={`fixed inset-0 z-[70] flex items-center justify-center py-24 px-4 transition-all duration-300 ${
+        className={`fixed inset-0 z-70 flex items-center justify-center py-24 px-4 transition-all duration-300 ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
         <div
-          className={`bg-white rounded-2xl h-[600px] overflow-auto shadow-2xl w-full max-w-md  p-8 relative transform transition-all duration-300 ${
+          className={`bg-white rounded-2xl h-150 overflow-auto shadow-2xl w-full max-w-md  p-8 relative transform transition-all duration-300 ${
             isOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-4"
           }`}
           onClick={(e) => e.stopPropagation()}
@@ -163,7 +169,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
                 required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition bg-white"
               >
-                <option value="wikipedia-writing">Wikipedia Writing</option>
+                <option value="wikipedia-page-creation">Wikipedia Writing</option>
                 <option value="wikipedia-editing">Wikipedia Editing</option>
                 <option value="wikipedia-publishing">Wikipedia Publishing</option>
                 <option value="wikipedia-consultant">Wikipedia Consultant</option>
@@ -201,15 +207,12 @@ const QuoteModal = ({ isOpen, onClose }) => {
               )}
             </button>
           </form>
-
-          {/* Footer */}
-          <p className="text-xs text-gray-500 text-center mt-4">
-            We respect your privacy. No spam, ever.
-          </p>
         </div>
       </div>
     </>
   );
+
+  return createPortal(modalContent, document.body);
 };
 
 export default QuoteModal;
