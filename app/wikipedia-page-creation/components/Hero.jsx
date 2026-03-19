@@ -59,16 +59,16 @@ export default function Hero() {
             <Image
               src={Img1}
               alt="Lady Image"
-              className="mx-auto w-[300px] md:w-[500px] h-auto"
+              className="mx-auto w-[300px] md:w-[700px] h-auto"
             />
           </div>
         </div>
       </div>
-      <Image
+      {/* <Image
         src={LeafImg}
         alt="Leaf"
         className="absolute -bottom-10 right-10 w-[50%] z-20"
-      />
+      /> */}
     </section>
   );
 }

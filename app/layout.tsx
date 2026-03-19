@@ -30,9 +30,14 @@ export default function RootLayout({
       >
         {children}
 
+        {/* Tawk error suppression and initialization */}
+        <Script id="tawk-init" strategy="beforeInteractive">
+          {`window.addEventListener('error', function(e){if(e.message && e.message.includes('i18next')){e.preventDefault();}}); if(!window.i18next){window.i18next=function(){};}`}
+        </Script>
+
         {/* Tawk.to live chat widget */}
         <Script id="tawk" strategy="afterInteractive">
-          {`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/69a7169ae2f23c1c34acc2db/1jiqb0jb0';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();`}
+          {`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){try{var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/69a7169ae2f23c1c34acc2db/1jiqb0jb0';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);}catch(e){console.error('Tawk initialization error:',e);}})();`}
         </Script>
       </body>
     </html>
