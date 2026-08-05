@@ -67,7 +67,7 @@ export default function FAQSection() {
     <section className="w-full bg-white py-16 px-4">
       <div className="max-w-3xl mx-auto">
         {/* Heading */}
-        <h2 className="text-center text-3xl md:text-4xl font-medium text-black">
+        <h2 className="text-center text-3xl md:text-5xl font-medium text-black">
           Frequently Asked{" "}
           <span className="text-[#8b6b5a] font-semibold">Questions</span>
         </h2>

@@ -25,6 +25,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google site verification */}
+        <meta name="google-site-verification" content="9uRzWF4m4eghIY1PZ_j4pj_pOm15AbkFplARWVXei3s" />
+        {/* Google Analytics */}
+        <Script
+          id="google-gtag"
+          src="https://www.googletagmanager.com/gtag/js?id=G-CMN41302DV"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CMN41302DV');`}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

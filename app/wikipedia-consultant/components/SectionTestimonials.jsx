@@ -90,7 +90,7 @@ export default function SectionTestimonials() {
           <p className="text-sm text-gray-500 tracking-widest mb-2 uppercase">
             Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             Why Our Clients Trust and Love Us
           </h2>
           <div className="section-divider divider-traingle relative"></div>

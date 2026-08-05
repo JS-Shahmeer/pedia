@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -13,14 +14,46 @@ const Contact = () => {
     name: "",
     email: "",
     subject: "",
+    service: "wikipedia-page-creation",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted", form);
-    alert("Message sent successfully!");
-    setForm({ name: "", email: "", subject: "", message: "" });
+    setLoading(true);
+
+    try {
+      // const response = await fetch("http://localhost:5020/api/contact", {
+      const response = await fetch("https://api.writeonpedia.com/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (response.ok) {
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully!",
+          text: "Thank you for contacting us. We'll get back to you soon.",
+          confirmButtonColor: "#b67878",
+          confirmButtonText: "OK",
+        });
+        setForm({ name: "", email: "", subject: "", service: "wikipedia-page-creation", message: "" });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops!",
+        text: "Something went wrong. Please try again later.",
+        confirmButtonColor: "#b67878",
+        confirmButtonText: "Try Again",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -29,7 +62,7 @@ const Contact = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <p className="text-sm text-gray-500 tracking-widest mb-2">CONTACT</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             Write me anything
           </h2>
           <div className="section-divider divider-traingle relative"></div>
@@ -66,6 +99,19 @@ const Contact = () => {
                 onChange={(e) => setForm({ ...form, subject: e.target.value })}
               />
 
+              <select
+                name="service"
+                value={form.service}
+                onChange={(e) => setForm({ ...form, service: e.target.value })}
+                required
+                className="w-full p-3 bg-white outline-none border border-gray-300 rounded"
+              >
+                <option value="wikipedia-page-creation">Wikipedia Writing</option>
+                <option value="wikipedia-editing">Wikipedia Editing</option>
+                <option value="wikipedia-publishing">Wikipedia Publishing</option>
+                <option value="wikipedia-consultant">Wikipedia Consultant</option>
+              </select>
+
               <textarea
                 rows="5"
                 placeholder="Your Message"
@@ -77,9 +123,10 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="bg-[#b67878] hover:bg-[#a56565] text-white px-10 py-4 font-medium transition"
+                disabled={loading}
+                className="bg-[#b67878] cursor-pointer hover:bg-[#a56565] text-white px-10 py-4 font-medium transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Now
+                {loading ? "Sending..." : "Send Now"}
               </button>
             </form>
           </div>

@@ -25,7 +25,7 @@ export default function SectionCTA() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 px-4">
           {/* Hire Button */}
-          <a href="/contact" className="w-full sm:w-auto bg-[#8b6b5a] hover:bg-[#7a5a4a] text-white font-semibold py-3 md:py-3.5 px-6 md:px-8 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 shadow-lg hover:shadow-xl">
+          <a href="/contact-us" className="w-full sm:w-auto bg-[#8b6b5a] hover:bg-[#7a5a4a] text-white font-semibold py-3 md:py-3.5 px-6 md:px-8 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 shadow-lg hover:shadow-xl">
             <span>Hire a Wikipedia Consultant</span>
             <Phone size={18} className="ml-1" />
           </a>

@@ -31,7 +31,8 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
     try {
       // Simulate API call (replace with actual endpoint)
-      const response = await fetch("/api/quote", {
+      // const response = await fetch("http://localhost:5020/api/quote", {
+      const response = await fetch("https://api.writeonpedia.com/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -86,7 +87,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
         }`}
       >
         <div
-          className={`bg-white rounded-2xl h-150 overflow-auto shadow-2xl w-full max-w-md  p-8 relative transform transition-all duration-300 ${
+          className={`bg-white rounded-2xl h-153 overflow-auto shadow-2xl w-full max-w-md  p-8 relative transform transition-all duration-300 ${
             isOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-4"
           }`}
           onClick={(e) => e.stopPropagation()}
@@ -122,7 +123,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
                 onChange={handleChange}
                 placeholder="Your Name"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition"
               />
             </div>
 
@@ -138,42 +139,45 @@ const QuoteModal = ({ isOpen, onClose }) => {
                 onChange={handleChange}
                 placeholder="your@email.com"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition"
               />
             </div>
 
-            {/* Company */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Company Name
-              </label>
-              <input
-                type="text"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-                placeholder="Your Company"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition"
-              />
-            </div>
+            {/* Company & Service Row */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Company */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1.5">
+                  Company Name
+                </label>
+                <input
+                  type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Your Company"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition text-sm"
+                />
+              </div>
 
-            {/* Service */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Service Needed *
-              </label>
-              <select
-                name="service"
-                value={formData.service}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition bg-white"
-              >
-                <option value="wikipedia-page-creation">Wikipedia Writing</option>
-                <option value="wikipedia-editing">Wikipedia Editing</option>
-                <option value="wikipedia-publishing">Wikipedia Publishing</option>
-                <option value="wikipedia-consultant">Wikipedia Consultant</option>
-              </select>
+              {/* Service */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1.5">
+                  Service Needed *
+                </label>
+                <select
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition bg-white text-sm"
+                >
+                  <option value="wikipedia-page-creation">Wikipedia Writing</option>
+                  <option value="wikipedia-editing">Wikipedia Editing</option>
+                  <option value="wikipedia-publishing">Wikipedia Publishing</option>
+                  <option value="wikipedia-consultant">Wikipedia Consultant</option>
+                </select>
+              </div>
             </div>
 
             {/* Message */}
@@ -187,7 +191,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
                 onChange={handleChange}
                 placeholder="Tell us more about your project..."
                 rows="3"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition resize-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b67878] transition resize-none"
               />
             </div>
 
@@ -195,7 +199,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#b67878] hover:bg-[#a56565] text-white font-medium py-3 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full cursor-pointer bg-[#b67878] hover:bg-[#a56565] text-white font-medium py-3 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {loading ? (
                 <>

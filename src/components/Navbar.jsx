@@ -5,12 +5,22 @@ import QuoteButton from "@/src/components/QuoteButton";
 import Logo from "@/src/images/logo.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { FileText, Edit3, Send, Briefcase, X } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [openSubmenus, setOpenSubmenus] = useState({})
   const pathname = usePathname()
+
+  const normalizePath = (path) => {
+    if (!path) return "/"
+    if (path === "/") return "/"
+    return path.endsWith("/") ? path.slice(0, -1) : path
+  }
+
+  const activePath = normalizePath(pathname)
 
   // shared navigation data
   const menuItems = [
@@ -19,13 +29,13 @@ export default function Navbar() {
     {
       label: "Services",
       submenu: [
-        { label: "Wikipedia Page Creation Services", href: "/wikipedia-page-creation" },
-        { label: "Wikipedia Editing Services", href: "/wikipedia-editing" },
-        { label: "Wikipedia Publishing Services", href: "/wikipedia-publishing" },
-        { label: "Wikipedia Consultant", href: "/wikipedia-consultant" },
+        { label: "Wikipedia Page Creation Services", href: "/wikipedia-page-creation", icon: FileText },
+        { label: "Wikipedia Editing Services", href: "/wikipedia-editing", icon: Edit3 },
+        { label: "Wikipedia Publishing Services", href: "/wikipedia-publishing", icon: Send },
+        { label: "Wikipedia Consultant", href: "/wikipedia-consultant", icon: Briefcase },
       ],
     },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "/contact-us" },
   ];
 
   useEffect(() => {
@@ -50,13 +60,13 @@ export default function Navbar() {
       <div className="w-[85vw] mx-auto px-5 bg-white grid grid-cols-2 md:grid-cols-3 items-center md:py-4 py-3">
         
         {/* Logo */}
-        <a href="/" className="logo flex items-center shrink-0">
+        <Link href="/" className="logo flex items-center shrink-0">
           <Image
             src={Logo}
             alt="Write on Pedia"
             className="h-16 w-auto min-w-40 object-contain object-left"
           />
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex justify-center" aria-label="Main navigation">
@@ -67,7 +77,7 @@ export default function Navbar() {
                   <>
                     <button
                       type="button"
-                      className={`text-gray-700 cursor-pointer hover:text-[#8b6b5a] flex items-center relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.submenu.some(sub => sub.href === pathname) ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'}`}
+                      className={`text-gray-700 cursor-pointer hover:text-[#8b6b5a] flex items-center relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.submenu.some(sub => sub.href === activePath) ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'}`}
                       aria-haspopup="true"
                       aria-expanded={!!openSubmenus.services}
                       onClick={() => toggleSubmenu('services')}
@@ -80,29 +90,37 @@ export default function Navbar() {
                       </svg>
                     </button>
                     <div
-                      className={`absolute left-1/2 transform -translate-x-1/2 mt-3 bg-white border rounded shadow-lg w-64 z-20 ${
+                      className={`absolute left-1/2 transform -translate-x-1/2 mt-3 bg-[#b67878] border border-[#a56565] rounded-lg shadow-lg w-64 z-20 overflow-hidden ${
                         openSubmenus.services ? "block" : "hidden"
                       } group-hover:block`}
                       onMouseLeave={() => setOpenSubmenus((prev) => ({ ...prev, services: false }))}
                     >
-                      {item.submenu.map((sub) => (
-                        <a
-                          key={sub.href}
-                          className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 ${sub.href === pathname ? 'bg-[#b67878] text-white hover:text-black font-semibold' : ''}`}
-                          href={sub.href}
-                        >
-                          {sub.label}
-                        </a>
-                      ))}
+                      {item.submenu.map((sub) => {
+                        const IconComponent = sub.icon;
+                        return (
+                          <Link
+                            key={sub.href}
+                            className={`flex items-center gap-3 px-4 py-3 text-sm transition-colors duration-200 ${
+                              sub.href === activePath
+                                ? 'bg-[#a56565] text-white'
+                                : 'text-white hover:bg-[#a56565]'
+                            }`}
+                            href={sub.href}
+                          >
+                            <IconComponent size={18} className="flex-shrink-0" />
+                            <span>{sub.label}</span>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </>
                 ) : (
-                  <a
+                  <Link
                     href={item.href}
-                    className={`text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.href === pathname ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'} block`}
+                    className={`text-gray-700 hover:text-[#8b6b5a] relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.href === activePath ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'} block`}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 )}
               </li>
             ))}
@@ -113,12 +131,12 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-4 justify-end">
           
           <QuoteButton variant="default">Get Started</QuoteButton>
-          <a
+          <Link
             href="tel:+15127680328"
             className="text-sm text-gray-700 hover:text-[#8b6b5a] focus:outline-none focus:ring-2 focus:ring-[#8b6b5a]"
           >
             (512) 768-0328
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Button */}
@@ -140,41 +158,68 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-white border rounded shadow-md p-4">
+      <div
+        className={`md:hidden fixed inset-0 bg-white z-40 transition-all duration-300 ${
+          open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0 pointer-events-none'
+        }`}
+      >
+        {/* Close Button */}
+        <div className="flex justify-end p-4">
+          <button
+            onClick={() => setOpen(false)}
+            className="p-2 text-[#b67878] hover:bg-[#f0e6e6] rounded-md transition-colors"
+            aria-label="Close menu"
+          >
+            <X size={24} />
+          </button>
+        </div>
+
+        <div className="h-full overflow-y-auto px-4 pb-20">
           <ul className="space-y-2">
             {menuItems.map((item) => (
               <li key={item.label} className="group">
                 {item.submenu ? (
                   <>
                     <div className="flex items-center justify-between">
-                      <span className={`text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.submenu.some(sub => sub.href === pathname) ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'}`}>{item.label}</span>
+                      <span className={`text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.submenu.some(sub => sub.href === activePath) ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'}`}>{item.label}</span>
                       <button onClick={() => toggleSubmenu('services')} className="p-1" aria-label="Toggle submenu">
                         ▾
                       </button>
                     </div>
                     {openSubmenus['services'] && (
-                      <ul className="mt-2 pl-4 space-y-1">
-                        {item.submenu.map((sub) => (
-                          <li key={sub.href}>
-                            <a href={sub.href} className={`text-gray-600 ${sub.href === pathname ? 'text-[#8b6b5a] font-semibold' : ''}`}>
-                              {sub.label}
-                            </a>
-                          </li>
-                        ))}
+                      <ul className="mt-2 pl-4 space-y-1 bg-[#b67878] rounded p-2 ml-2">
+                        {item.submenu.map((sub) => {
+                          const IconComponent = sub.icon;
+                          return (
+                            <li key={sub.href}>
+                              <Link
+                                href={sub.href}
+                                className={`flex items-center gap-3 px-3 py-2 rounded transition-colors duration-200 text-sm ${
+                                  sub.href === activePath
+                                    ? 'bg-[#b67878] text-white font-semibold'
+                                    : 'text-white hover:bg-[#804a4a] hover:text-gray-800'
+                                }`}
+                                onClick={() => setOpen(false)}
+                              >
+                                <IconComponent size={16} className="flex-shrink-0" />
+                                {sub.label}
+                              </Link>
+                            </li>
+                          );
+                        })}
                       </ul>
                     )}
                   </>
                 ) : (
-                  <a href={item.href} className={`text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.href === pathname ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'} block`}>
+                  <Link href={item.href} className={`text-gray-700 relative pb-1 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[#8b6b5a] after:transition-all after:duration-300 ${item.href === pathname ? 'after:w-full text-[#8b6b5a]' : 'group-hover:after:w-full'} block`} onClick={() => setOpen(false)}>
                     {item.label}
-                  </a>
+                  </Link>
                 )}
               </li>
             ))}
           </ul>
         </div>
-      )}
+      </div>
     </header>
   )
 }

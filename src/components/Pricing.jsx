@@ -7,7 +7,7 @@ export default function Pricing() {
       <div className="global-container">
         <div className="text-center mb-16">
           <p className="text-sm text-gray-500 tracking-widest mb-2">Service Packages</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             Pricing based on their version
           </h2>
           <div className="section-divider divider-traingle relative"></div>

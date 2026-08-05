@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 import { FaFileAlt, FaDice, FaBullseye } from "react-icons/fa"; // Using react-icons for example
 
@@ -34,7 +35,7 @@ const HomeServices = () => {
           <p className="text-gray-600 mb-4 uppercase tracking-widest text-sm">
             WHY CHOOSE US
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             What You Will Accomplish
           </h2>
           <div className="section-divider divider-traingle relative"></div>
@@ -54,12 +55,12 @@ const HomeServices = () => {
                 {card.title}
               </h3>
               <p className="text-gray-600 mb-4">{card.description}</p>
-              <a
-                href="/contact"
+              {/* <Link
+                href="/contact-us"
                 className="text-[#7c5a59] hover:text-black font-medium cursor-pointer flex items-center"
               >
                 Read more <ChevronRight size={16} className="ml-1" />
-              </a>
+              </Link> */}
             </div>
           ))}
         </div>

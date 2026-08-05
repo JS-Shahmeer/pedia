@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import { BsStarFill } from "react-icons/bs";
 import QuoteButton from "@/src/components/QuoteButton";
+import Link from "next/link";
 
 export default function SectionOne() {
   return (
@@ -43,7 +44,7 @@ export default function SectionOne() {
 
           {/* right text */}
           <div className="md:w-1/2 w-full">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Trusted Wikipedia Page Creation Agency That Works With Precision &
               Transparency
             </h2>
@@ -66,12 +67,12 @@ export default function SectionOne() {
               author, researcher, or public figure.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="/contact"
+              <Link
+                href="/contact-us"
                 className="bg-[#f4e7dc] text-black px-6 py-3 rounded-lg hover:bg-[#e8d8c7] transition"
               >
                 Hire A Wikipedia Writer
-              </a>
+              </Link>
               <QuoteButton varient="outline">
                 Get a Free Quote
               </QuoteButton>

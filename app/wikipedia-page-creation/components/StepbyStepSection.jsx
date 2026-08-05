@@ -5,6 +5,8 @@ import LeafImg from "@/src/images/leaf.webp";
 import Image from "next/image";
 import QuoteButton from "@/src/components/QuoteButton";
 
+import Link from "next/link";
+
 const steps = [
   {
     title: "A Platform People Already Trust",
@@ -20,7 +22,18 @@ const steps = [
   },
   {
     title: "Strong Search Presence",
-    desc: `Another reason people hire Wikipedia page creator is visibility in search results. Wikipedia pages frequently appear among the top results on search engines because the platform is considered authoritative. When an article is properly sourced and written according to Wikipedia standards, it can help people find accurate information about you or your organization without relying on advertising or promotional campaigns.`,
+    desc: (
+      <>
+        Another reason people hire Wikipedia page creator is visibility in search results. Wikipedia pages frequently appear among the top results on search engines because the platform is considered authoritative. When an article is properly sourced and{" "}
+        <Link
+          href="/"
+          className="underline text-[#b67878] hover:text-black"
+        >
+          written according to Wikipedia
+        </Link>{" "}
+        standards it can help people find accurate information about you or your organization without relying on advertising or promotional campaigns.
+      </>
+    ),
   },
 ];
 

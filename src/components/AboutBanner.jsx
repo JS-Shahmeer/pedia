@@ -6,7 +6,7 @@ export default function AboutBanner() {
   return (
     <section className="bg-[#f6ede6] pb-20 pt-40">
       <div className="global-container">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 text-center">
           About Us
         </h2>
         <p className="mt-4 text-base text-gray-600 max-w-md mx-auto text-center">

@@ -43,7 +43,7 @@ export default function SectionOne() {
 
           {/* right text */}
           <div className="md:w-1/2 w-full">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Expert Wikipedia Consultants Who Navigate the Rules with Precision
             </h2>
             <p className="text-gray-700 mb-4">
@@ -59,7 +59,7 @@ export default function SectionOne() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="/contact"
+                href="/contact-us"
                 className="bg-[#f4e7dc] text-black px-6 py-3 rounded-lg hover:bg-[#e8d8c7] transition"
               >
                 Hire A Wikipedia Consultant

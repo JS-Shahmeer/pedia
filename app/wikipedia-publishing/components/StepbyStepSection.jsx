@@ -52,7 +52,7 @@ export default function StepbyStepSection() {
 
             <p className="my-6 text-gray-600 text-base leading-relaxed">
               Publishing a Wikipedia page requires care, accuracy, and strict
-              adherence to rules. Our Wikipedia page submission service guides
+              adherence to rules. Our <a href="/wikipedia-page-creation" className="underline text-[#b67878] hover:text-black">Wikipedia page</a> service guides
               your page from idea to live article while keeping every step
               transparent and compliant. Each stage ensures your profile or
               organization is presented clearly and in a format that Wikipedia

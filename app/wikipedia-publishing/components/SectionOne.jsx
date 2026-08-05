@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import { BsStarFill } from "react-icons/bs";
 import QuoteButton from "@/src/components/QuoteButton";
+import Link from "next/link";
 
 export default function SectionOne() {
   return (
@@ -43,7 +44,7 @@ export default function SectionOne() {
 
           {/* right text */}
           <div className="md:w-1/2 w-full">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Expert Wikipedia Publishing Service USA - Editors Who Handle The
               Submission
             </h2>
@@ -55,22 +56,22 @@ export default function SectionOne() {
               page gets approved and remains stable over time.
             </p>
             <p className="text-gray-700 mb-6">
-              Our team includes professional Wikipedia writers who understand
+              Our team includes <a href="/" className="underline text-[#b67878] hover:text-black">professional Wikipedia writers</a> who understand
               these requirements deeply. They carefully check all sources,
               structure the content clearly, and ensure it follows Wikipedia
-              formatting rules. Hire expert Wikipedia editor from us who will
+              formatting rules. Hire expert <a href="/wikipedia-editing" className="underline text-[#b67878] hover:text-black">Wikipedia editors</a> from us who will
               handle the publishing process step by step, whether you need a
               biography, corporate page, or professional profile. They focus on
               clarity and compliance so that your page passes Wikipedia’s review
               smoothly.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="/contact"
+              <Link
+                href="/contact-us"
                 className="bg-[#f4e7dc] text-black px-6 py-3 rounded-lg hover:bg-[#e8d8c7] transition"
               >
                 Hire A Wikipedia Publisher
-              </a>
+              </Link>
               <QuoteButton variant="default"> Let’s Get Started</QuoteButton>
             </div>
           </div>

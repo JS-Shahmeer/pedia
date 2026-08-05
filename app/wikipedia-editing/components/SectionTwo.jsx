@@ -19,8 +19,13 @@ export default function SectionTwo() {
     {
       icon: Search,
       title: "Improve Online Visibility",
-      description:
-        "Search engines trust Wikipedia because of its authority and strict editorial standards. A properly written article often appears near the top of search results. Our editors structure the content carefully so your page stays clear and easy to read.",
+      description: (
+        <>
+          Search engines trust Wikipedia because of its authority and strict editorial standards. A properly{' '}
+          <a href="/" className="underline text-[#b67878] hover:text-black">written article</a>{' '}
+          often appears near the top of search results. Our editors structure the content carefully so your page stays clear and easy to read.
+        </>
+      ),
     },
     {
       icon: Briefcase,
@@ -32,7 +37,11 @@ export default function SectionTwo() {
       icon: CheckCircle,
       title: "Verify Every Source",
       description:
-        "Wikipedia requires independent sources. Blogs, self-published content, and promotional materials usually do not qualify. Our editors research and verify reliable publications before adding them as citations.",
+          (
+            <>
+              Wikipedia requires independent sources. Blogs, self- <a href="/wikipedia-publishing" className="underline text-[#b67878] hover:text-black">published content,</a> and promotional materials usually do not qualify. Our editors research and verify reliable publications before adding them as citations.
+            </>
+          ),
     },
     {
       icon: List,
@@ -55,7 +64,7 @@ export default function SectionTwo() {
           <p className="text-sm text-gray-500 tracking-widest mb-2 uppercase">
             Why Choose Us
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             What Professional Wikipedia Page Creation <br className="md:block hidden" /> Helps You Achieve
           </h2>
           <div className="section-divider divider-traingle relative"></div>

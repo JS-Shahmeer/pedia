@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import { BsStarFill } from "react-icons/bs";
 import QuoteButton from "@/src/components/QuoteButton";
+import Link from "next/link";
 
 export default function SectionOne() {
   return (
@@ -43,7 +44,7 @@ export default function SectionOne() {
 
           {/* right text */}
           <div className="md:w-1/2 w-full">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Experienced Wikipedia Editors Who Understand the Platform
             </h2>
             <p className="text-gray-700 mb-4">
@@ -54,7 +55,11 @@ export default function SectionOne() {
               that fits the encyclopedia’s style.
             </p>
             <p className="text-gray-700 mb-6">
-              Clients often ask about professional Wikipedia page creation
+              Clients often ask about professional{" "}
+              <a className="underline text-[#b67878] hover:text-black" href="/wikipedia-page-creation">
+                {" "}
+                Wikipedia page creation{" "}
+              </a>
               because they want their achievements presented correctly. That
               requires structure and strong references. Our editors work through
               each section patiently so the final draft reads clearly and
@@ -62,12 +67,12 @@ export default function SectionOne() {
               compliance with Wikipedia policies.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="/contact"
+              <Link
+                href="/contact-us"
                 className="bg-[#f4e7dc] text-black px-6 py-3 rounded-lg hover:bg-[#e8d8c7] transition"
               >
                 Hire A Wikipedia Editor
-              </a>
+              </Link>
               <QuoteButton variant="default"> Let’s Get Started</QuoteButton>
             </div>
           </div>

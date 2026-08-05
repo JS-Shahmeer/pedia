@@ -43,7 +43,7 @@ const Testimonials = () => {
           <p className="text-sm text-gray-500 tracking-[4px] uppercase mb-3">
             Client Feedback
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             What Our Clients Say About Us
           </h2>
           <div className="section-divider divider-traingle relative"></div>

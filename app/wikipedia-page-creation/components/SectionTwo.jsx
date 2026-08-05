@@ -38,13 +38,23 @@ export default function SectionTwo() {
       icon: Send,
       title: "Articles for Creation Submission",
       description:
-        "Editors within the Wikipedia community review the draft and determine whether it meets publishing standards. If adjustments are requested, we respond accordingly and refine the content where necessary. The objective is not speed but stability.",
+          (
+            <>
+              Editors within the Wikipedia community review the draft and determine whether it meets{' '}
+              <a href="/wikipedia-publishing" className="underline text-[#b67878] hover:text-black">publishing standards</a>. If adjustments are requested, we respond accordingly and refine the content where necessary. The objective is not speed but stability.
+            </>
+          ),
     },
     {
       icon: Eye,
       title: "Post-Publication Monitoring",
       description:
-        "Our team can assist with verifying updates, correcting inaccurate edits, and maintaining proper citations. This ensures the article remains accurate and compliant over time.",
+        (
+          <>
+            Our team can assist with verifying updates, correcting{' '}
+            <a href="/wikipedia-editing" className="underline text-[#b67878] hover:text-black">inaccurate edits</a>, and maintaining proper citations. This ensures the article remains accurate and compliant over time.
+          </>
+        ),
     },
   ];
 
@@ -55,7 +65,7 @@ export default function SectionTwo() {
           <p className="text-sm text-gray-500 tracking-widest mb-2 uppercase">
             What we offer
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             Our Approach to Wikipedia Page Creation
           </h2>
           <div className="section-divider divider-traingle relative"></div>

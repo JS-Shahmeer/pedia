@@ -23,14 +23,14 @@ export default function Home() {
     <main className="relative">
       <Navbar />
       <Hero />
-      <About />
       <HomeServices />
       <Chapters />
       <SubscribeCTA />
       <Portfolio />
       {/* <Pricing /> */}
       <Testimonials />
-      <FAQSection />
+      {/* <FAQSection /> */}
+      <About />
       <CTA />
       <Contact />
       <Footer />

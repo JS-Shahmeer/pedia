@@ -53,7 +53,7 @@ export default function Portfolio() {
           <p className="text-sm text-gray-500 tracking-widest mb-2">
             CASE STUDIES
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             Our Work
           </h2>
           <div className="section-divider divider-traingle relative"></div>

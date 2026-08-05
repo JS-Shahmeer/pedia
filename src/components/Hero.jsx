@@ -21,10 +21,10 @@ export default function Hero() {
           {/* Left Content */}
           <div className="w-full md:w-6/12 mb-10 md:mb-0">
             <div className="relative">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 capitalize">
-                Professional{" "}
-                <span className="text-[#a96969]">Wikipedia writers</span> You
-                Can Trust
+              <h1 className="text-4xl md:text-7xl font-bold mb-6 capitalize">
+                Professional <br className="md:block hidden" />
+                <span className="text-[#a96969]">Wikipedia writers</span>{" "}
+                <br className="md:block hidden" /> You Can Trust
               </h1>
 
               <p className="text-gray-500 mb-8 text-lg">

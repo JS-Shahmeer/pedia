@@ -43,8 +43,12 @@ export default function SectionTwo() {
     {
       icon: Eye,
       title: "Ongoing Advice",
-      description:
-        "After publication, pages need maintenance. We provide ongoing consultation to monitor edits, update information, and address any challenges that arise.",
+      description: (
+        <>
+          <a href="/wikipedia-publishing" className="underline text-[#b67878] hover:text-black">After publication</a>, pages need maintenance. We provide ongoing consultation to{' '}
+          <a href="/wikipedia-editing" className="underline text-[#b67878] hover:text-black">monitor edits</a>, update information, and address any challenges that arise.
+        </>
+      ),
     },
   ];
 
@@ -55,7 +59,7 @@ export default function SectionTwo() {
           <p className="text-sm text-gray-500 tracking-widest mb-2 uppercase">
             What we offer
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             Build Credibility with Wikipedia
           </h2>
           <div className="section-divider divider-traingle relative"></div>

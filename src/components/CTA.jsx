@@ -12,7 +12,7 @@ const CTA = ({ bgColor = "bg-[#fdf6f2]" }) => {
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
             Ready to Take the First Step? <br className="md:block hidden" /> Work With Professional Wikipedia writers
           </h2>
-          <h2 className="text-xl md:text-4xl font-bold text-[#b77b7b] mb-6 text-center">
+          <h2 className="text-xl md:text-5xl font-bold text-[#b77b7b] mb-6 text-center">
             <a href="tel:+15127680328">(512) 768-0328</a>
           </h2>
           <div className="flex justify-center">
